@@ -74,7 +74,7 @@ def descargar_series(get, tickers):
 
     Son los mismos que usó la valoración completa (EV/EBITDA con el EBITDA de S&P Global, en dólares también para los
     ADR). El campo enterpriseToEbitda de quoteSummary no sirve: mezcla divisas en los ADR (SAP, TSM...) y usa otro EBITDA."""
-    p2 = int(time.time()); p1 = p2 - 21 * 86400; out = {}
+    p2 = int(time.time()); p1 = p2 - 120 * 86400; out = {}   # la serie no es diaria: se toma el último dato publicado
     for t in tickers:
         try:
             j = _reintentos(lambda: get(f"https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/{t}",
