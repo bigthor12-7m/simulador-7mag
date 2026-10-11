@@ -21,6 +21,8 @@ Cada lunes por la mañana, GitHub ejecuta el flujo **Actualizar datos** (`.githu
 3. añade la semana al histórico con la valoración por defecto (`actualizador/historico.js`, con el mismo motor que la app);
 4. guarda los datos en `app/datos/` y vuelve a publicar la app.
 
+El EV/EBITDA de los comparables se toma del mismo dato que muestra la página *Statistics* de Yahoo (serie diaria de `fundamentals-timeseries`), igual que en la valoración completa; el campo `enterpriseToEbitda` de `quoteSummary` no se usa porque mezcla divisas en los ADR y usa otro EBITDA. Para revisar cada semana qué entra en las medianas, el flujo guarda `actualizador/ultimo_detalle.json` (múltiplos y fuente de cada comparable) y `actualizador/ultima_descarga.json` (descarga completa).
+
 La app instalada recoge los datos nuevos la próxima vez que se abre con conexión. Para actualizar a mano: pestaña **Actions** → **Actualizar datos** → **Run workflow**.
 
 Lo que **no** cambia cada semana son los estados financieros, el último balance, las acciones, las hipótesis de largo plazo, los escenarios y la prima de riesgo de Damodaran. Eso se rehace en la **valoración completa trimestral** con Claude (skill `analisis-financiero-v2`), que regenera `actualizador/configuracion.json` y los ficheros de `app/datos/`. Cuando una empresa publica resultados antes de esa valoración, el consenso de Yahoo pasa al trimestre siguiente: la app conserva sus años 1 y 2 anteriores y lo indica en los avisos.

@@ -22,6 +22,7 @@ BASE = pathlib.Path(__file__).resolve().parent
 DATOS = BASE.parent / "app" / "datos"
 CONF = json.load(open(BASE / "configuracion.json", encoding="utf-8"))
 MODULOS = "price,summaryDetail,defaultKeyStatistics,financialData,earningsTrend,calendarEvents"
+SERIES = "trailingEnterprisesValueEBITDARatio,trailingEnterpriseValue,trailingMarketCap"
 r = lambda x: (x or {}).get("raw") if isinstance(x, dict) else x
 d = lambda s: dt.date.fromisoformat(s)
 
@@ -47,25 +48,57 @@ def _cliente():
     return get
 
 
+def _reintentos(f, intentos=4):
+    for intento in range(intentos):
+        try:
+            return f()
+        except Exception:
+            if intento == intentos - 1: raise
+            time.sleep(3 * (intento + 1))
+
+
 def descargar(tickers):
     get = _cliente(); out, fallos = {}, []
     for t in tickers:
-        for intento in range(4):
-            try:
-                j = get(f"https://query2.finance.yahoo.com/v10/finance/quoteSummary/{t}", {"modules": MODULOS})
-                out[t] = j["quoteSummary"]["result"][0]
-                break
-            except Exception as e:
-                if intento == 3: fallos.append(f"{t}: {e}")
-                time.sleep(3 * (intento + 1))
+        try:
+            j = _reintentos(lambda: get(f"https://query2.finance.yahoo.com/v10/finance/quoteSummary/{t}", {"modules": MODULOS}))
+            out[t] = j["quoteSummary"]["result"][0]
+        except Exception as e:
+            fallos.append(f"{t}: {e}")
         time.sleep(0.6)
-    return out, fallos
+    return out, fallos, get
+
+
+def descargar_series(get, tickers):
+    """Múltiplos 'actuales' de la página Statistics de Yahoo (serie diaria 'trailing' de fundamentals-timeseries).
+
+    Son los mismos que usó la valoración completa (EV/EBITDA con el EBITDA de S&P Global, en dólares también para los
+    ADR). El campo enterpriseToEbitda de quoteSummary no sirve: mezcla divisas en los ADR (SAP, TSM...) y usa otro EBITDA."""
+    p2 = int(time.time()); p1 = p2 - 21 * 86400; out = {}
+    for t in tickers:
+        try:
+            j = _reintentos(lambda: get(f"https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/{t}",
+                                        {"symbol": t, "type": SERIES, "period1": p1, "period2": p2, "merge": "false", "padTimeSeries": "true",
+                                         "lang": "en-US", "region": "US"}), 2)
+            fila = {}
+            for res in (j.get("timeseries") or {}).get("result") or []:
+                tipo = ((res.get("meta") or {}).get("type") or [None])[0]
+                vals = [x for x in (res.get(tipo) or []) if x and x.get("reportedValue") and x["reportedValue"].get("raw") is not None]
+                if tipo and vals:
+                    u = max(vals, key=lambda x: x.get("asOfDate", ""))
+                    fila[tipo] = {"valor": u["reportedValue"]["raw"], "fecha": u.get("asOfDate")}
+            out[t] = fila
+        except Exception as e:
+            out[t] = {"error": str(e)[:200]}
+        time.sleep(0.4)
+    return out
 
 
 # ======================================================================= consenso (misma lógica que consenso.py del modelo)
 class Consenso:
-    def __init__(self, yq, V, eurusd, estad=None):
-        self.YQ, self.V, self.eurusd, self.estad = yq, V, eurusd, estad
+    def __init__(self, yq, V, eurusd, estad=None, series=None):
+        self.YQ, self.V, self.eurusd, self.estad, self.series = yq, V, eurusd, estad, series or {}
+        self.fuente_ev = {}
 
     def trend(self, t):
         return {x["period"]: x for x in self.YQ[t]["earningsTrend"]["trend"]}
@@ -150,12 +183,25 @@ class Consenso:
 
     def ev_ebitda_ttm(self, t):
         if self.estad is not None:
+            self.fuente_ev[t] = "pagina_statistics"
             return fnum((self.estad.get(t) or {}).get("Enterprise Value/EBITDA"))
-        return r(self.YQ[t].get("defaultKeyStatistics", {}).get("enterpriseToEbitda"))
+        s = (self.series.get(t) or {}).get("trailingEnterprisesValueEBITDARatio")
+        if s:
+            self.fuente_ev[t] = "statistics_" + str(s["fecha"]); return s["valor"]
+        # alternativa: el ratio de quoteSummary, solo si cotización y estados financieros están en la misma divisa
+        y = self.YQ[t]
+        if y.get("price", {}).get("currency") == y.get("financialData", {}).get("financialCurrency"):
+            self.fuente_ev[t] = "quoteSummary"
+            return r(y.get("defaultKeyStatistics", {}).get("enterpriseToEbitda"))
+        self.fuente_ev[t] = "sin_dato"
+        return None
 
     def deuda_neta(self, t):
         if self.estad is not None:
             y = self.estad[t]; return (fnum(y["Enterprise Value"]) - fnum(y["Market Cap"])) * 1000
+        s = self.series.get(t) or {}
+        if s.get("trailingEnterpriseValue") and s.get("trailingMarketCap"):
+            return (s["trailingEnterpriseValue"]["valor"] - s["trailingMarketCap"]["valor"]) / 1e6
         y = self.YQ[t]
         return (r(y["defaultKeyStatistics"].get("enterpriseValue")) - r(y["price"].get("marketCap"))) / 1e6
 
@@ -244,15 +290,16 @@ def main():
     if a.snapshot:
         yq = json.load(open(BASE / "snapshot" / f"yahoo_{a.snapshot}.json", encoding="utf-8"))
         estad = json.load(open(next((BASE / "snapshot").glob("yahoo_estadisticas_*.json")), encoding="utf-8"))
-        V = dt.date(2026, 10, 9); tnx = 5.24; eurusd = CONF["eurusd_inicial"]; hoy = a.snapshot
+        V = dt.date(2026, 10, 9); tnx = 5.24; eurusd = CONF["eurusd_inicial"]; hoy = a.snapshot; series = None
     else:
-        yq, fallos = descargar(tickers + ["^TNX", "EURUSD=X"])
+        yq, fallos, get = descargar(tickers + ["^TNX", "EURUSD=X"])
+        series = descargar_series(get, [t for t in tickers if t in yq])
         estad = None; hoy = dt.date.today().isoformat()
         tiempos = [r(yq[t]["price"].get("regularMarketTime")) for t in orden if t in yq]
         V = max(dt.datetime.fromtimestamp(x, dt.timezone.utc).date() for x in tiempos if x) if any(tiempos) else dt.date.today()
         tnx = r(yq.get("^TNX", {}).get("price", {}).get("regularMarketPrice"))
         eurusd = r(yq.get("EURUSD=X", {}).get("price", {}).get("regularMarketPrice")) or CONF["eurusd_inicial"]
-    cons = Consenso(yq, V, eurusd, estad)
+    cons = Consenso(yq, V, eurusd, estad, series)
 
     prev = {n: json.load(open(origen / f"{n}.json", encoding="utf-8")) for n in ("empresas", "trayectorias", "multiplos", "parametros")}
     estado = {"actualizado": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes") if not a.snapshot else f"{hoy}T00:00+00:00",
@@ -302,7 +349,22 @@ def main():
         except Exception as ex:
             mult.append(mprev[t]); avisos.append(f"{t}: se mantienen los múltiplos anteriores ({ex}).")
 
+    usados = {cp["tk"] for t in orden for cp in CONF["empresas"][t]["comparables"]}
+    alternativos = sorted(t for t in usados if t in F and not str(cons.fuente_ev.get(t, "")).startswith(("statistics", "pagina")))
+    if alternativos:
+        avisos.append("EV/EBITDA sin el dato de la página Statistics de Yahoo para " + ", ".join(alternativos)
+                      + ": se usa una fuente alternativa o se excluye ese comparable.")
     estado["avisos"] = avisos
+
+    # detalle para revisar la semana (qué comparables entran en cada mediana y de dónde sale su EV/EBITDA)
+    detalle = {"fecha_mercado": V.isoformat(), "tipo_sin_riesgo": par["tipo_sin_riesgo"], "eurusd": eurusd,
+               "comparables": {t: {**{k: (round(v, 4) if isinstance(v, float) else v) for k, v in F[t].items()},
+                                   "ev_ebitda_ttm": cons.ev_ebitda_ttm(t) if t in yq else None, "fuente_ev_ebitda": cons.fuente_ev.get(t)}
+                               for t in tickers if t in F}}
+    if not a.snapshot:
+        json.dump(detalle, open(BASE / "ultimo_detalle.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        json.dump({"quoteSummary": yq, "series": series}, open(BASE / "ultima_descarga.json", "w", encoding="utf-8"),
+                  ensure_ascii=False, separators=(",", ":"))
     escribir("empresas", empresas); escribir("trayectorias", tray); escribir("multiplos", mult); escribir("parametros", [par])
     json.dump(estado, open(DATOS / "estado.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"Datos de mercado del {V} · avisos: {len(avisos)} · fallos de descarga: {len(fallos)}")
