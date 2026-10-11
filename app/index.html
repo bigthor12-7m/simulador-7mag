@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Simulador 7M</title>
+<meta name="description" content="Simulador de valoración de las 7 Magníficas: DCF por escenarios y múltiplos, con datos que se actualizan cada semana.">
+<meta name="theme-color" content="#16294A">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="iconos/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="iconos/favicon-64.png">
+<link rel="apple-touch-icon" href="iconos/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Simulador 7M">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="preload" href="fuentes/Inter-Regular.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="ap">
+  <header class="ap-bar">
+    <div class="ap-brand">
+      <img src="iconos/favicon-64.png" alt="" width="30" height="30">
+      <div><p class="ap-name">Simulador 7M</p><p class="ap-sub" id="ap-datos">Cargando datos…</p></div>
+    </div>
+    <div class="ap-acc">
+      <span class="ap-off" id="ap-off" hidden>Sin conexión · datos guardados</span>
+      <button type="button" class="ap-inst" id="ap-instalar" hidden>Instalar la app</button>
+    </div>
+  </header>
+  <div class="ap-ios" id="ap-ios" hidden>
+    <span>Para instalarla en el iPhone o el iPad: botón <b>Compartir</b> y después <b>Añadir a pantalla de inicio</b>.</span>
+    <button type="button" class="sv-btn" id="ap-ios-x">Entendido</button>
+  </div>
+  <div class="ap-layout">
+    <aside class="ap-side" aria-label="Supuestos">
+      <details class="ap-sup" id="ap-sup" open>
+        <summary><span class="ap-sup-t">Supuestos</span><span class="ap-sup-r" id="ap-sup-r"></span></summary>
+        <p class="sv-card-n">Mueve cualquier supuesto y todo el panel se recalcula. Debajo de cada control, el valor por defecto.</p>
+        <div class="sv-ctrls">
+      <div class="sv-grp">
+        <p class="sv-grp-t">Coste del capital</p>
+        <div class="sv-ctrl"><div class="sv-ctrl-l"><label for="sv-rf">Tipo sin riesgo (Treasury 10 años)</label><span class="sv-ctrl-v" id="sv-rf-v">—</span></div>
+          <input class="sv-range" id="sv-rf" type="range" min="0.02" max="0.07" step="0.0001"><span class="sv-ctrl-d" id="sv-rf-d"></span></div>
+        <div class="sv-ctrl"><div class="sv-ctrl-l"><label for="sv-erp">Prima de riesgo de mercado</label><span class="sv-ctrl-v" id="sv-erp-v">—</span></div>
+          <input class="sv-range" id="sv-erp" type="range" min="0.025" max="0.08" step="0.0001"><span class="sv-ctrl-d" id="sv-erp-d"></span></div>
+        <div class="sv-ctrl"><div class="sv-ctrl-l"><label for="sv-dw">Ajuste adicional al WACC</label><span class="sv-ctrl-v" id="sv-dw-v">—</span></div>
+          <input class="sv-range" id="sv-dw" type="range" min="-0.03" max="0.03" step="0.0025"><span class="sv-ctrl-d" id="sv-dw-d"></span></div>
+      </div>
+      <div class="sv-grp">
+        <p class="sv-grp-t">Valor terminal</p>
+        <div class="sv-ctrl"><div class="sv-ctrl-l"><label for="sv-g">Crecimiento a perpetuidad (g)</label><span class="sv-ctrl-v" id="sv-g-v">—</span></div>
+          <input class="sv-range" id="sv-g" type="range" min="0" max="0.045" step="0.0025"><span class="sv-ctrl-d" id="sv-g-d"></span></div>
+        <div class="sv-ctrl"><div class="sv-ctrl-l"><span id="sv-vt-l">Método del valor terminal</span></div>
+          <div class="sv-seg" role="group" aria-labelledby="sv-vt-l" id="sv-vt">
+            <button type="button" data-vt="inductores">Inductores (ROIC)</button><button type="button" data-vt="gordon">Gordon (flujo)</button>
+          </div><span class="sv-ctrl-d" id="sv-vt-d"></span></div>
+      </div>
+      <div class="sv-grp">
+        <p class="sv-grp-t">Escenarios y conciliación</p>
+        <div class="sv-ctrl"><div class="sv-ctrl-l"><label for="sv-pp">Probabilidad del escenario pesimista</label><span class="sv-ctrl-v" id="sv-pp-v">—</span></div>
+          <input class="sv-range" id="sv-pp" type="range" min="0" max="0.6" step="0.05"></div>
+        <div class="sv-ctrl"><div class="sv-ctrl-l"><label for="sv-po">Probabilidad del escenario optimista</label><span class="sv-ctrl-v" id="sv-po-v">—</span></div>
+          <input class="sv-range" id="sv-po" type="range" min="0" max="0.6" step="0.05"><span class="sv-ctrl-d" id="sv-prob-d"></span></div>
+        <div class="sv-ctrl"><div class="sv-ctrl-l"><label for="sv-pd">Peso del DCF en el valor central</label><span class="sv-ctrl-v" id="sv-pd-v">—</span></div>
+          <input class="sv-range" id="sv-pd" type="range" min="0" max="1" step="0.1"><span class="sv-ctrl-d" id="sv-pd-d"></span></div>
+      </div>
+    </div>
+    <div class="sv-bar">
+      <div class="sv-chips" id="sv-presets"><span class="sv-bar-l">Escenarios rápidos:</span></div>
+      <button type="button" class="sv-btn" id="sv-reset">Volver a los supuestos por defecto</button>
+    </div>
+      </details>
+    </aside>
+    <main class="sv" id="simulador">
+      <header class="sv-head" id="cabecera">
+    <h1 class="sv-h1">Simulador de valoración · 7 Magníficas</h1>
+    <p class="sv-take dash-skeleton" id="sv-take">—</p>
+    <p class="sv-meta" id="sv-meta">—</p>
+  </header>
+      <div class="ap-avisos" id="ap-avisos" hidden><p class="ap-avisos-t">Avisos de la actualización semanal</p><ul id="ap-avisos-l"></ul></div>
+      <section class="sv-kpis" id="indicadores">
+    <div class="sv-card sv-kpi"><p class="sv-kpi-l">Cotizan por debajo de su valor central</p><p class="sv-num dash-skeleton" id="k1">—</p><p class="sv-kpi-r" id="k1r"></p></div>
+    <div class="sv-card sv-kpi"><p class="sv-kpi-l">Potencial mediano frente a la cotización</p><p class="sv-num dash-skeleton" id="k2">—</p><p class="sv-kpi-r" id="k2r"></p></div>
+    <div class="sv-card sv-kpi"><p class="sv-kpi-l">Valor de las siete frente a su capitalización</p><p class="sv-num dash-skeleton" id="k3">—</p><p class="sv-kpi-r" id="k3r"></p></div>
+    <div class="sv-card sv-kpi"><p class="sv-kpi-l">WACC medio</p><p class="sv-num dash-skeleton" id="k4">—</p><p class="sv-kpi-r" id="k4r"></p></div>
+  </section>
+
+  <section class="sv-card" id="potencial" aria-labelledby="sv-pot-t">
+    <h2 class="sv-card-t" id="sv-pot-t">Valor central frente a la cotización</h2>
+    <p class="sv-card-n">Barra: rango entre el valor bajo y el alto; punto: valor central; trazo gris: valor central del informe del 10/10. A la derecha de la línea, la empresa cotiza por debajo de su valor. Pulsa una empresa para ver su detalle.</p>
+    <div class="sv-chart dash-skeleton" id="sv-pot" style="min-height: 260px"></div>
+    <p class="sv-warn" id="sv-pot-x"></p>
+  </section>
+
+  <section class="sv-card" id="tabla" aria-labelledby="sv-tab-t">
+    <h2 class="sv-card-t" id="sv-tab-t">Valoración por empresa ($ por acción)</h2>
+    <p class="sv-card-n">Valor central = peso del DCF × DCF ponderado por escenarios + resto × media de los valores con PER y EV/EBITDA adelantados de los comparables.</p>
+    <div class="sv-tw">
+      <table class="sv-table" id="sv-tabla">
+        <thead><tr><th>Empresa</th><th>Cotización</th><th>WACC</th><th class="sv-sec-col">DCF pesimista</th><th class="sv-sec-col">DCF base</th><th class="sv-sec-col">DCF optimista</th><th>DCF ponderado</th><th class="sv-sec-col">Múltiplos</th><th>Valor central</th><th>Potencial</th><th>Informe 10/10</th></tr></thead>
+        <tbody class="dash-skeleton"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <h2 class="sv-sec" id="detalle">Detalle por empresa</h2>
+  <div class="sv-chips" id="sv-emps" role="group" aria-label="Empresa"></div>
+
+  <section class="sv-card" id="ajustes" aria-labelledby="sv-aj-t">
+    <div class="sv-detail-h"><h2 class="sv-card-t" id="sv-aj-t">Supuestos de <span id="sv-aj-n">—</span></h2><button type="button" class="sv-btn" id="sv-aj-reset">Volver a los de la empresa</button></div>
+    <p class="sv-card-n">Se aplican a los tres escenarios. El crecimiento se ajusta en los años 1–9 y converge al del año 10; el margen se ajusta a partir del año 3 hasta llegar entero al año 10.</p>
+    <div class="sv-ctrls">
+      <div class="sv-ctrl"><div class="sv-ctrl-l"><label for="sv-beta">Beta</label><span class="sv-ctrl-v" id="sv-beta-v">—</span></div>
+        <input class="sv-range" id="sv-beta" type="range" step="0.01"><span class="sv-ctrl-d" id="sv-beta-d"></span></div>
+      <div class="sv-ctrl"><div class="sv-ctrl-l"><label for="sv-dg">Crecimiento de las ventas (años 1–9)</label><span class="sv-ctrl-v" id="sv-dg-v">—</span></div>
+        <input class="sv-range" id="sv-dg" type="range" min="-0.1" max="0.1" step="0.005"><span class="sv-ctrl-d" id="sv-dg-d"></span></div>
+      <div class="sv-ctrl"><div class="sv-ctrl-l"><label for="sv-dm">Margen EBIT a largo plazo (año 10)</label><span class="sv-ctrl-v" id="sv-dm-v">—</span></div>
+        <input class="sv-range" id="sv-dm" type="range" min="-0.15" max="0.15" step="0.005"><span class="sv-ctrl-d" id="sv-dm-d"></span></div>
+    </div>
+    <div class="sv-inv" id="sv-inv-bloque">
+      <p class="sv-grp-t">Retorno de la nueva inversión</p>
+      <div class="sv-ctrls">
+        <div class="sv-ctrl"><div class="sv-ctrl-l"><span id="sv-inv-l">Cómo se proyecta el beneficio</span></div>
+          <div class="sv-seg" role="group" aria-labelledby="sv-inv-l" id="sv-inv">
+            <button type="button" data-m="consenso">Margen del consenso</button><button type="button" data-m="explicito">Retorno de la inversión</button>
+          </div><span class="sv-ctrl-d" id="sv-inv-d"></span></div>
+        <div class="sv-ctrl"><div class="sv-ctrl-l"><label for="sv-ronic">Rentabilidad de la nueva inversión (RONIC)</label><span class="sv-ctrl-v" id="sv-ronic-v">—</span></div>
+          <input class="sv-range" id="sv-ronic" type="range" min="0" max="0.6" step="0.005"><span class="sv-ctrl-d" id="sv-ronic-d"></span></div>
+        <div class="sv-ctrl"><div class="sv-ctrl-l"><label for="sv-lag">Años hasta que la inversión rinde</label><span class="sv-ctrl-v" id="sv-lag-v">—</span></div>
+          <input class="sv-range" id="sv-lag" type="range" min="1" max="3" step="1"><span class="sv-ctrl-d" id="sv-lag-d"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sv-kpis" id="indicadores-empresa">
+    <div class="sv-card sv-kpi"><p class="sv-kpi-l">Valor central</p><p class="sv-num" id="e1">—</p><p class="sv-kpi-r" id="e1r"></p></div>
+    <div class="sv-card sv-kpi"><p class="sv-kpi-l">DCF ponderado por escenarios</p><p class="sv-num" id="e2">—</p><p class="sv-kpi-r" id="e2r"></p></div>
+    <div class="sv-card sv-kpi"><p class="sv-kpi-l">Crecimiento que descuenta la cotización (años 1–5)</p><p class="sv-num" id="e3">—</p><p class="sv-kpi-r" id="e3r"></p></div>
+    <div class="sv-card sv-kpi"><p class="sv-kpi-l">Rentabilidad de la nueva inversión (caso base)</p><p class="sv-num" id="e5">—</p><p class="sv-kpi-r" id="e5r"></p></div>
+    <div class="sv-card sv-kpi"><p class="sv-kpi-l">Peso del valor terminal (caso base)</p><p class="sv-num" id="e4">—</p><p class="sv-kpi-r" id="e4r"></p></div>
+  </section>
+
+  <section class="sv-card" id="evolucion" aria-labelledby="sv-ev-t">
+    <h2 class="sv-card-t" id="sv-ev-t">Evolución semanal</h2>
+    <p class="sv-card-n">Cotización y valor central con los supuestos por defecto en cada actualización semanal; la banda es el rango bajo–alto. El rombo es la simulación actual si has cambiado algún supuesto.</p>
+    <div class="sv-legend" id="sv-ev-leg"></div>
+    <div class="sv-chart" id="sv-ev" style="min-height: 230px"></div>
+    <p class="sv-kpi-r" id="sv-ev-r"></p>
+  </section>
+
+  <section class="sv-card" id="inversion" aria-labelledby="sv-iv-t">
+    <h2 class="sv-card-t" id="sv-iv-t">Inversión de crecimiento y su retorno</h2>
+    <p class="sv-card-n">Caso base, miles de millones de dólares por año. El beneficio operativo después de impuestos (NOPAT) se reparte entre el negocio actual y lo que aporta la inversión nueva; la inversión de crecimiento (CapEx − amortización + NOF) se resta. El punto es el flujo de caja libre que queda; TTM = últimos doce meses.</p>
+    <div class="sv-legend" id="sv-iv-leg"></div>
+    <div class="sv-chart" id="sv-iv" style="min-height: 260px"></div>
+    <p class="sv-kpi-r" id="sv-iv-r"></p>
+  </section>
+
+  <div class="sv-grid2">
+    <section class="sv-card" id="flujos" aria-labelledby="sv-fl-t">
+      <h2 class="sv-card-t" id="sv-fl-t">Flujo de caja libre proyectado</h2>
+      <p class="sv-card-n">Miles de millones de dólares por año, en cada escenario.</p>
+      <div class="sv-legend" id="sv-fl-leg"></div>
+      <div class="sv-chart" id="sv-fl" style="min-height: 230px"></div>
+    </section>
+    <section class="sv-card" id="puente" aria-labelledby="sv-pu-t">
+      <h2 class="sv-card-t" id="sv-pu-t">Del valor de la empresa al valor por acción</h2>
+      <p class="sv-card-n">Caso base, miles de millones de dólares.</p>
+      <div class="sv-chart" id="sv-pu" style="min-height: 250px"></div>
+      <p class="sv-kpi-r" id="sv-pu-r"></p>
+    </section>
+  </div>
+
+  <div class="sv-grid2">
+    <section class="sv-card" id="sensibilidad" aria-labelledby="sv-se-t">
+      <h2 class="sv-card-t" id="sv-se-t">Sensibilidad del caso base: WACC × g</h2>
+      <p class="sv-card-n">Valor por acción en dólares, con el ROIC terminal del caso base fijo. Verde: por encima de la cotización; rojo: por debajo. Recuadro: supuestos actuales.</p>
+      <div class="sv-chart" id="sv-se" style="min-height: 280px"></div>
+    </section>
+    <section class="sv-card" id="metodos" aria-labelledby="sv-me-t">
+      <h2 class="sv-card-t" id="sv-me-t">Valor por acción según el método</h2>
+      <p class="sv-card-n">Barra: mínimo–máximo; trazo: valor central de cada método; línea vertical: cotización.</p>
+      <div class="sv-chart" id="sv-me" style="min-height: 220px"></div>
+    </section>
+  </div>
+
+  <section class="sv-card" id="metodo" aria-labelledby="sv-mt-t">
+    <h2 class="sv-card-t" id="sv-mt-t">Cómo se calcula</h2>
+    <ul class="sv-method">
+      <li><b>DCF.</b> Diez años de flujo de caja libre desde las cifras de los últimos doce meses y el último balance trimestral; años 1–2 con el consenso de analistas, después convergencia lineal a las hipótesis de largo plazo de cada escenario.</li>
+      <li><b>WACC.</b> Ke = tipo sin riesgo + beta × prima de riesgo + prima país; coste de la deuda = tipo sin riesgo + diferencial; pesos con la deuda del último balance y la capitalización. El ajuste adicional se suma al resultado.</li>
+      <li><b>Valor terminal.</b> Por inductores: NOPAT del año 11 × (1 − g / ROIC terminal) / (WACC − g), con un ROIC terminal entre el WACC y el ROIC del año 10 (con un tope del <span id="sv-tope">—</span>). Gordon: flujo del año 10 × (1 + g) / (WACC − g).</li>
+      <li><b>Valor central.</b> DCF ponderado por las probabilidades de los escenarios, combinado con la media de los valores por PER y EV/EBITDA adelantados de los comparables. Valor bajo y alto: escenario pesimista u optimista con el menor o el mayor de los dos múltiplos.</li>
+      <li><b>Retorno de la inversión.</b> Con "Margen del consenso" el beneficio sale de las ventas y márgenes de los analistas, como en el informe; la rentabilidad de la nueva inversión que se muestra es la que ese consenso supone: (NOPAT del año 10 − NOPAT actual) ÷ inversión neta acumulada, incluida la de los últimos doce meses. Con "Retorno de la inversión", el NOPAT de cada año = NOPAT actual + RONIC × inversión neta acumulada hasta hace los años elegidos; la inversión sale del CapEx previsto y cada escenario conserva su rentabilidad relativa. La inversión solo crea valor si su rentabilidad supera el WACC.</li>
+      <li><b>Comprobación.</b> Con los datos de mercado y los supuestos del informe, el simulador reproduce exactamente el informe y el modelo Excel del <span id="sv-fv">—</span>. Cada lunes se actualizan las cotizaciones, el Treasury, el consenso de analistas y los múltiplos de los comparables; los estados financieros y las hipótesis de largo plazo cambian con la valoración completa trimestral. No es una recomendación de inversión.</li>
+      <li><b>Versión.</b> <span id="ap-version">—</span></li>
+    </ul>
+  </section>
+    </main>
+  </div>
+</div>
+<noscript><p style="padding:16px">Esta app necesita JavaScript.</p></noscript>
+<script src="vendor/d3.min.js"></script>
+<script src="motor.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

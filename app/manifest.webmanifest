@@ -1,0 +1,20 @@
+{
+  "name": "Simulador de valoración · 7 Magníficas",
+  "short_name": "Simulador 7M",
+  "description": "Valoración por DCF y múltiplos de Apple, Microsoft, NVIDIA, Alphabet, Amazon, Meta y Tesla, con supuestos ajustables y datos que se actualizan cada semana.",
+  "lang": "es",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#F3F5F8",
+  "theme_color": "#16294A",
+  "categories": ["finance", "education"],
+  "icons": [
+    { "src": "iconos/icono-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "iconos/icono-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "iconos/icono-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

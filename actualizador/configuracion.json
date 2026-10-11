@@ -1,0 +1,419 @@
+{
+ "version_modelo": "informe 7MAG_2026-10-10_v2_2",
+ "fecha_valoracion_completa": "2026-10-10",
+ "erp": 0.042,
+ "erp_fuente": "ERP implícita del S&P 500 a 1/10/2026, Damodaran Online (TTM con payout ajustado; Treasury de referencia 5,29 %)",
+ "spread": 0.004,
+ "g": 0.03,
+ "prob": {
+  "pes": 0.25,
+  "base": 0.5,
+  "opt": 0.25
+ },
+ "roic_tope": 0.4,
+ "eurusd_inicial": 1.1206,
+ "orden": [
+  "AAPL",
+  "MSFT",
+  "NVDA",
+  "GOOGL",
+  "AMZN",
+  "META",
+  "TSLA"
+ ],
+ "empresas": {
+  "AAPL": {
+   "tax": 0.17,
+   "sbc_nongaap": false,
+   "acc": 14714.7,
+   "nfi_q": 0.0,
+   "ttm_rev": 466823.0,
+   "ttm_sbc": 13706.0,
+   "ytd_rev": 364357.0,
+   "fecha_balance": "2026-06-27",
+   "periodos": {
+    "0q": "2026-09-30",
+    "+1q": "2026-12-31",
+    "0y": "2026-09-30",
+    "+1y": "2027-09-30"
+   },
+   "lp": {
+    "g10": 0.035,
+    "m10": 0.33,
+    "da": [
+     0.028,
+     0.03
+    ],
+    "cx0": 0.025,
+    "nof": [
+     -0.11,
+     -0.1
+    ]
+   },
+   "m10_pes": 0.29,
+   "m10_opt": 0.36,
+   "cx10": 0.0427231964128433,
+   "comparables": [
+    {
+     "tk": "MSFT",
+     "nombre": "Microsoft"
+    },
+    {
+     "tk": "GOOGL",
+     "nombre": "Alphabet"
+    },
+    {
+     "tk": "META",
+     "nombre": "Meta Platforms"
+    },
+    {
+     "tk": "AMZN",
+     "nombre": "Amazon"
+    }
+   ]
+  },
+  "MSFT": {
+   "tax": 0.2,
+   "sbc_nongaap": false,
+   "acc": 7443.0,
+   "nfi_q": -100.0,
+   "ttm_rev": 331839,
+   "ttm_sbc": 12405,
+   "ytd_rev": null,
+   "fecha_balance": "2026-06-30",
+   "periodos": {
+    "0q": "2026-09-30",
+    "+1q": "2026-12-31",
+    "0y": "2027-06-30",
+    "+1y": "2028-06-30"
+   },
+   "lp": {
+    "g10": 0.035,
+    "m10": 0.42,
+    "da": [
+     0.13,
+     0.115
+    ],
+    "cx0": 0.45,
+    "nof": [
+     -0.08,
+     -0.08
+    ]
+   },
+   "m10_pes": 0.36,
+   "m10_opt": 0.46,
+   "cx10": 0.14579189211734542,
+   "comparables": [
+    {
+     "tk": "ORCL",
+     "nombre": "Oracle"
+    },
+    {
+     "tk": "SAP",
+     "nombre": "SAP"
+    },
+    {
+     "tk": "CRM",
+     "nombre": "Salesforce"
+    },
+    {
+     "tk": "GOOGL",
+     "nombre": "Alphabet"
+    },
+    {
+     "tk": "AMZN",
+     "nombre": "Amazon"
+    },
+    {
+     "tk": "AAPL",
+     "nombre": "Apple"
+    }
+   ]
+  },
+  "NVDA": {
+   "tax": 0.17,
+   "sbc_nongaap": true,
+   "acc": 24285.0,
+   "nfi_q": 269.0,
+   "ttm_rev": 302970.0,
+   "ttm_sbc": 7241.0,
+   "ytd_rev": 177837.0,
+   "fecha_balance": "2026-07-26",
+   "periodos": {
+    "0q": "2026-10-31",
+    "+1q": "2027-01-31",
+    "0y": "2027-01-31",
+    "+1y": "2028-01-31"
+   },
+   "lp": {
+    "g10": 0.03,
+    "m10": 0.5,
+    "da": [
+     0.015,
+     0.03
+    ],
+    "cx0": 0.03,
+    "nof": [
+     0.14,
+     0.12
+    ]
+   },
+   "m10_pes": 0.38,
+   "m10_opt": 0.58,
+   "cx10": 0.03490519617278528,
+   "comparables": [
+    {
+     "tk": "AMD",
+     "nombre": "AMD"
+    },
+    {
+     "tk": "AVGO",
+     "nombre": "Broadcom"
+    },
+    {
+     "tk": "TSM",
+     "nombre": "TSMC"
+    },
+    {
+     "tk": "QCOM",
+     "nombre": "Qualcomm"
+    },
+    {
+     "tk": "MU",
+     "nombre": "Micron"
+    }
+   ]
+  },
+  "GOOGL": {
+   "tax": 0.17,
+   "sbc_nongaap": false,
+   "acc": 12388.0,
+   "nfi_q": 152.0,
+   "ttm_rev": 445866.0,
+   "ttm_sbc": 28147.0,
+   "ytd_rev": 229692.0,
+   "fecha_balance": "2026-06-30",
+   "periodos": {
+    "0q": "2026-09-30",
+    "+1q": "2026-12-31",
+    "0y": "2026-12-31",
+    "+1y": "2027-12-31"
+   },
+   "lp": {
+    "g10": 0.035,
+    "m10": 0.33,
+    "da": [
+     0.065,
+     0.1
+    ],
+    "cx0": 0.45,
+    "nof": [
+     -0.06,
+     -0.06
+    ]
+   },
+   "m10_pes": 0.28,
+   "m10_opt": 0.37,
+   "cx10": 0.1303661265087761,
+   "comparables": [
+    {
+     "tk": "META",
+     "nombre": "Meta Platforms"
+    },
+    {
+     "tk": "MSFT",
+     "nombre": "Microsoft"
+    },
+    {
+     "tk": "AMZN",
+     "nombre": "Amazon"
+    },
+    {
+     "tk": "AAPL",
+     "nombre": "Apple"
+    }
+   ]
+  },
+  "AMZN": {
+   "tax": 0.19,
+   "sbc_nongaap": false,
+   "acc": 10903.0,
+   "nfi_q": -19.0,
+   "ttm_rev": 775680.0,
+   "ttm_sbc": 19314.0,
+   "ytd_rev": 382125.0,
+   "fecha_balance": "2026-06-30",
+   "periodos": {
+    "0q": "2026-09-30",
+    "+1q": "2026-12-31",
+    "0y": "2026-12-31",
+    "+1y": "2027-12-31"
+   },
+   "lp": {
+    "g10": 0.035,
+    "m10": 0.17,
+    "da": [
+     0.07,
+     0.08
+    ],
+    "cx0": 0.23,
+    "nof": [
+     -0.12,
+     -0.1
+    ]
+   },
+   "m10_pes": 0.13,
+   "m10_opt": 0.2,
+   "cx10": 0.096724984533264,
+   "comparables": [
+    {
+     "tk": "WMT",
+     "nombre": "Walmart"
+    },
+    {
+     "tk": "COST",
+     "nombre": "Costco"
+    },
+    {
+     "tk": "MSFT",
+     "nombre": "Microsoft"
+    },
+    {
+     "tk": "GOOGL",
+     "nombre": "Alphabet"
+    },
+    {
+     "tk": "META",
+     "nombre": "Meta Platforms"
+    }
+   ]
+  },
+  "META": {
+   "tax": 0.16,
+   "sbc_nongaap": false,
+   "acc": 2566.0,
+   "nfi_q": -19.0,
+   "ttm_rev": 228247.0,
+   "ttm_sbc": 25136.0,
+   "ytd_rev": 117111.0,
+   "fecha_balance": "2026-06-30",
+   "periodos": {
+    "0q": "2026-09-30",
+    "+1q": "2026-12-31",
+    "0y": "2026-12-31",
+    "+1y": "2027-12-31"
+   },
+   "lp": {
+    "g10": 0.035,
+    "m10": 0.36,
+    "da": [
+     0.11,
+     0.11
+    ],
+    "cx0": 0.6,
+    "nof": [
+     -0.08,
+     -0.08
+    ]
+   },
+   "m10_pes": 0.3,
+   "m10_opt": 0.4,
+   "cx10": 0.1436300320452482,
+   "comparables": [
+    {
+     "tk": "GOOGL",
+     "nombre": "Alphabet"
+    },
+    {
+     "tk": "MSFT",
+     "nombre": "Microsoft"
+    },
+    {
+     "tk": "AMZN",
+     "nombre": "Amazon"
+    },
+    {
+     "tk": "PINS",
+     "nombre": "Pinterest"
+    },
+    {
+     "tk": "RDDT",
+     "nombre": "Reddit"
+    }
+   ]
+  },
+  "TSLA": {
+   "tax": 0.21,
+   "sbc_nongaap": true,
+   "acc": 3540.0,
+   "nfi_q": 341.0,
+   "ttm_rev": 103619.0,
+   "ttm_sbc": 3798.0,
+   "ytd_rev": 50623.0,
+   "fecha_balance": "2026-06-30",
+   "periodos": {
+    "0q": "2026-09-30",
+    "+1q": "2026-12-31",
+    "0y": "2026-12-31",
+    "+1y": "2027-12-31"
+   },
+   "lp": {
+    "g10": 0.035,
+    "m10": 0.1,
+    "da": [
+     0.065,
+     0.06
+    ],
+    "cx0": 0.17,
+    "nof": [
+     -0.05,
+     -0.05
+    ]
+   },
+   "m10_pes": 0.05,
+   "m10_opt": 0.15,
+   "cx10": 0.08377572500497989,
+   "comparables": [
+    {
+     "tk": "TM",
+     "nombre": "Toyota"
+    },
+    {
+     "tk": "GM",
+     "nombre": "General Motors"
+    },
+    {
+     "tk": "F",
+     "nombre": "Ford"
+    },
+    {
+     "tk": "BYDDY",
+     "nombre": "BYD"
+    },
+    {
+     "tk": "RACE",
+     "nombre": "Ferrari"
+    }
+   ]
+  }
+ },
+ "comparables_tickers": [
+  "AMD",
+  "AVGO",
+  "BYDDY",
+  "COST",
+  "CRM",
+  "F",
+  "GM",
+  "MU",
+  "ORCL",
+  "PINS",
+  "QCOM",
+  "RACE",
+  "RDDT",
+  "SAP",
+  "TM",
+  "TSM",
+  "WMT"
+ ]
+}

@@ -1,0 +1,93 @@
+[
+{
+"ticker": "AAPL",
+"bpa_ntm": 9.599983326626367,
+"per_mediana": 24.74837609329289,
+"ev_ebitda_mediana": 11.12872892051043,
+"per_valor_min": 204.2288336980719,
+"per_valor_mediana": 237.58399785669033,
+"per_valor_max": 246.35988236120164,
+"ev_ebitda_valor_min": 114.34616035070329,
+"ev_ebitda_valor_mediana": 142.72756946308198,
+"ev_ebitda_valor_max": 183.20873519227808,
+"comparables": "MSFT, GOOGL, META, AMZN"
+},
+{
+"ticker": "MSFT",
+"bpa_ntm": 20.850241643835616,
+"per_mediana": 23.267370100961024,
+"ev_ebitda_mediana": 11.031152046925303,
+"per_valor_min": 310.27641547073057,
+"per_valor_mediana": 485.1302890215932,
+"per_valor_max": 731.1497435118413,
+"ev_ebitda_valor_min": 292.5848607439434,
+"ev_ebitda_valor_mediana": 360.52868352392903,
+"ev_ebitda_valor_max": 843.769121016893,
+"comparables": "ORCL, SAP, CRM, GOOGL, AMZN, AAPL"
+},
+{
+"ticker": "NVDA",
+"bpa_ntm": 14.281661950565814,
+"per_mediana": 18.88905931206877,
+"ev_ebitda_mediana": 15.829198174506134,
+"per_valor_min": 70.03062545395818,
+"per_valor_mediana": 269.76715965915344,
+"per_valor_max": 597.3583185126557,
+"ev_ebitda_valor_min": 126.21842772037672,
+"ev_ebitda_valor_mediana": 272.5349934613405,
+"ev_ebitda_valor_max": 790.1592581102444,
+"comparables": "AMD, AVGO, TSM, QCOM, MU"
+},
+{
+"ticker": "GOOGL",
+"bpa_ntm": 14.586045755807028,
+"per_mediana": 25.524970070967978,
+"ev_ebitda_mediana": 13.554021582266932,
+"per_valor_min": 310.3016965365944,
+"per_valor_mediana": 372.3083813707439,
+"per_valor_max": 511.4848928555837,
+"ev_ebitda_valor_min": 178.90733821157698,
+"ev_ebitda_valor_mediana": 266.33978677651464,
+"ev_ebitda_valor_max": 500.6473086714576,
+"comparables": "META, MSFT, AMZN, AAPL"
+},
+{
+"ticker": "AMZN",
+"bpa_ntm": 10.33701438951757,
+"per_mediana": 25.662532316894932,
+"ev_ebitda_mediana": 14.255344696978703,
+"per_valor_min": 219.9083395109656,
+"per_valor_mediana": 265.2739658312026,
+"per_valor_max": 424.97027161335853,
+"ev_ebitda_valor_min": 169.84327708388872,
+"ev_ebitda_valor_mediana": 262.1718323261475,
+"ev_ebitda_valor_max": 459.7044682080086,
+"comparables": "WMT, COST, MSFT, GOOGL, META"
+},
+{
+"ticker": "META",
+"bpa_ntm": 33.781811766825484,
+"per_mediana": 24.109344361544757,
+"ev_ebitda_mediana": 14.255344696978703,
+"per_valor_min": 276.35163103443654,
+"per_valor_mediana": 814.4573330432803,
+"per_valor_max": 866.9268361894204,
+"ev_ebitda_valor_min": 499.71068974709794,
+"ev_ebitda_valor_mediana": 801.75460620532,
+"ev_ebitda_valor_max": 1476.4873915261032,
+"comparables": "GOOGL, MSFT, AMZN, PINS, RDDT"
+},
+{
+"ticker": "TSLA",
+"bpa_ntm": 2.133914735556879,
+"per_mediana": 8.075263699080175,
+"ev_ebitda_mediana": 15.421552177062576,
+"per_valor_min": 12.447169654012402,
+"per_valor_mediana": 17.231924200974735,
+"per_valor_max": 68.858859203756,
+"ev_ebitda_valor_min": 34.05568310338139,
+"ev_ebitda_valor_mediana": 62.79118467696508,
+"ev_ebitda_valor_max": 200.4795424025391,
+"comparables": "TM, GM, F, BYDDY, RACE"
+}
+]

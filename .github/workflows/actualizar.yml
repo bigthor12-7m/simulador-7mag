@@ -1,0 +1,50 @@
+name: Actualizar datos
+
+# Cada lunes a primera hora (05:17 UTC = 07:17 en Madrid en verano, 06:17 en invierno) con las cotizaciones del cierre del viernes.
+# También se puede lanzar a mano: pestaña Actions > Actualizar datos > Run workflow.
+on:
+  schedule:
+    - cron: "17 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Instalar dependencias
+        run: pip install -r actualizador/requirements.txt
+      - name: Descargar datos de mercado y consenso
+        run: python actualizador/actualizar.py
+      - name: Añadir la semana al histórico
+        run: node actualizador/historico.js
+      - name: Guardar los datos nuevos en el repositorio
+        run: |
+          git config user.name "actualizador-semanal"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/datos
+          if git diff --cached --quiet; then echo "Sin cambios"; else git commit -m "Datos de la semana del $(date -u +%F)" && git push; fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: app
+      - id: despliegue
+        uses: actions/deploy-pages@v4

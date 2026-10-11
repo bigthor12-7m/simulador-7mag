@@ -1,0 +1,44 @@
+{
+ "actualizado": "2026-10-10T00:00+00:00",
+ "fecha_mercado": "2026-10-09",
+ "valoracion_completa": "2026-10-10",
+ "empresas": {
+  "AAPL": {
+   "cotizacion": 336.64,
+   "consenso": "actualizado",
+   "proximos_resultados": "2026-11-02"
+  },
+  "MSFT": {
+   "cotizacion": 535.07,
+   "consenso": "actualizado",
+   "proximos_resultados": "2026-10-28"
+  },
+  "NVDA": {
+   "cotizacion": 229.28,
+   "consenso": "actualizado",
+   "proximos_resultados": "2026-11-17"
+  },
+  "GOOGL": {
+   "cotizacion": 351.66,
+   "consenso": "actualizado",
+   "proximos_resultados": "2026-10-28"
+  },
+  "AMZN": {
+   "cotizacion": 262.43,
+   "consenso": "actualizado",
+   "proximos_resultados": "2026-10-29"
+  },
+  "META": {
+   "cotizacion": 718.67,
+   "consenso": "actualizado",
+   "proximos_resultados": "2026-10-28"
+  },
+  "TSLA": {
+   "cotizacion": 382.7,
+   "consenso": "actualizado",
+   "proximos_resultados": "2026-10-21"
+  }
+ },
+ "avisos": [],
+ "fallos": []
+}

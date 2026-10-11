@@ -1,0 +1,18 @@
+[
+{
+"tipo_sin_riesgo": 0.0524,
+"prima_riesgo_mercado": 0.042,
+"diferencial_deuda": 0.004,
+"crecimiento_perpetuo": 0.03,
+"prob_pesimista": 0.25,
+"prob_base": 0.5,
+"prob_optimista": 0.25,
+"peso_dcf": 0.5,
+"roic_tope": 0.4,
+"convergencia_roic_pesimista": 0.25,
+"convergencia_roic_base": 0.5,
+"convergencia_roic_optimista": 0.75,
+"fecha_cotizacion": "2026-10-09",
+"fecha_valoracion": "2026-10-10"
+}
+]

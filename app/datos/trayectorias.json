@@ -1,0 +1,2102 @@
+[
+{
+"ticker": "AAPL",
+"escenario": "pes",
+"anio": 1,
+"crecimiento": 0.04441416026370826,
+"margen_ebit": 0.30836370123785667,
+"amortizacion_ventas": 0.028,
+"capex_ventas": 0.025,
+"nof_ventas": -0.11
+},
+{
+"ticker": "AAPL",
+"escenario": "pes",
+"anio": 2,
+"crecimiento": 0.010286512649860052,
+"margen_ebit": 0.30942184403409984,
+"amortizacion_ventas": 0.02822222222222222,
+"capex_ventas": 0.02696924404587148,
+"nof_ventas": -0.1088888888888889
+},
+{
+"ticker": "AAPL",
+"escenario": "pes",
+"anio": 3,
+"crecimiento": 0.013375698568627546,
+"margen_ebit": 0.30699411352983735,
+"amortizacion_ventas": 0.028444444444444446,
+"capex_ventas": 0.028938488091742955,
+"nof_ventas": -0.10777777777777778
+},
+{
+"ticker": "AAPL",
+"escenario": "pes",
+"anio": 4,
+"crecimiento": 0.01646488448739504,
+"margen_ebit": 0.30456638302557487,
+"amortizacion_ventas": 0.028666666666666667,
+"capex_ventas": 0.030907732137614434,
+"nof_ventas": -0.10666666666666667
+},
+{
+"ticker": "AAPL",
+"escenario": "pes",
+"anio": 5,
+"crecimiento": 0.019554070406162534,
+"margen_ebit": 0.3021386525213124,
+"amortizacion_ventas": 0.028888888888888888,
+"capex_ventas": 0.03287697618348591,
+"nof_ventas": -0.10555555555555556
+},
+{
+"ticker": "AAPL",
+"escenario": "pes",
+"anio": 6,
+"crecimiento": 0.022643256324930028,
+"margen_ebit": 0.2997109220170499,
+"amortizacion_ventas": 0.029111111111111112,
+"capex_ventas": 0.03484622022935739,
+"nof_ventas": -0.10444444444444445
+},
+{
+"ticker": "AAPL",
+"escenario": "pes",
+"anio": 7,
+"crecimiento": 0.02573244224369752,
+"margen_ebit": 0.2972831915127874,
+"amortizacion_ventas": 0.029333333333333333,
+"capex_ventas": 0.03681546427522887,
+"nof_ventas": -0.10333333333333333
+},
+{
+"ticker": "AAPL",
+"escenario": "pes",
+"anio": 8,
+"crecimiento": 0.028821628162465016,
+"margen_ebit": 0.29485546100852494,
+"amortizacion_ventas": 0.029555555555555554,
+"capex_ventas": 0.03878470832110034,
+"nof_ventas": -0.10222222222222223
+},
+{
+"ticker": "AAPL",
+"escenario": "pes",
+"anio": 9,
+"crecimiento": 0.03191081408123251,
+"margen_ebit": 0.29242773050426246,
+"amortizacion_ventas": 0.029777777777777778,
+"capex_ventas": 0.040753952366971824,
+"nof_ventas": -0.10111111111111112
+},
+{
+"ticker": "AAPL",
+"escenario": "pes",
+"anio": 10,
+"crecimiento": 0.035,
+"margen_ebit": 0.29,
+"amortizacion_ventas": 0.03,
+"capex_ventas": 0.0427231964128433,
+"nof_ventas": -0.1
+},
+{
+"ticker": "AAPL",
+"escenario": "base",
+"anio": 1,
+"crecimiento": 0.09628888676781244,
+"margen_ebit": 0.318703532108685,
+"amortizacion_ventas": 0.028,
+"capex_ventas": 0.025,
+"nof_ventas": -0.11
+},
+{
+"ticker": "AAPL",
+"escenario": "base",
+"anio": 2,
+"crecimiento": 0.07371463417327676,
+"margen_ebit": 0.3215528975389026,
+"amortizacion_ventas": 0.02822222222222222,
+"capex_ventas": 0.02696924404587148,
+"nof_ventas": -0.1088888888888889
+},
+{
+"ticker": "AAPL",
+"escenario": "base",
+"anio": 3,
+"crecimiento": 0.06887530490161717,
+"margen_ebit": 0.32260878534653975,
+"amortizacion_ventas": 0.028444444444444446,
+"capex_ventas": 0.028938488091742955,
+"nof_ventas": -0.10777777777777778
+},
+{
+"ticker": "AAPL",
+"escenario": "base",
+"anio": 4,
+"crecimiento": 0.06403597562995757,
+"margen_ebit": 0.32366467315417696,
+"amortizacion_ventas": 0.028666666666666667,
+"capex_ventas": 0.030907732137614434,
+"nof_ventas": -0.10666666666666667
+},
+{
+"ticker": "AAPL",
+"escenario": "base",
+"anio": 5,
+"crecimiento": 0.05919664635829797,
+"margen_ebit": 0.3247205609618141,
+"amortizacion_ventas": 0.028888888888888888,
+"capex_ventas": 0.03287697618348591,
+"nof_ventas": -0.10555555555555556
+},
+{
+"ticker": "AAPL",
+"escenario": "base",
+"anio": 6,
+"crecimiento": 0.05435731708663838,
+"margen_ebit": 0.32577644876945133,
+"amortizacion_ventas": 0.029111111111111112,
+"capex_ventas": 0.03484622022935739,
+"nof_ventas": -0.10444444444444445
+},
+{
+"ticker": "AAPL",
+"escenario": "base",
+"anio": 7,
+"crecimiento": 0.049517987814978785,
+"margen_ebit": 0.3268323365770885,
+"amortizacion_ventas": 0.029333333333333333,
+"capex_ventas": 0.03681546427522887,
+"nof_ventas": -0.10333333333333333
+},
+{
+"ticker": "AAPL",
+"escenario": "base",
+"anio": 8,
+"crecimiento": 0.04467865854331919,
+"margen_ebit": 0.32788822438472565,
+"amortizacion_ventas": 0.029555555555555554,
+"capex_ventas": 0.03878470832110034,
+"nof_ventas": -0.10222222222222223
+},
+{
+"ticker": "AAPL",
+"escenario": "base",
+"anio": 9,
+"crecimiento": 0.0398393292716596,
+"margen_ebit": 0.32894411219236286,
+"amortizacion_ventas": 0.029777777777777778,
+"capex_ventas": 0.040753952366971824,
+"nof_ventas": -0.10111111111111112
+},
+{
+"ticker": "AAPL",
+"escenario": "base",
+"anio": 10,
+"crecimiento": 0.035,
+"margen_ebit": 0.33,
+"amortizacion_ventas": 0.03,
+"capex_ventas": 0.0427231964128433,
+"nof_ventas": -0.1
+},
+{
+"ticker": "AAPL",
+"escenario": "opt",
+"anio": 1,
+"crecimiento": 0.21163094423503503,
+"margen_ebit": 0.318703532108685,
+"amortizacion_ventas": 0.028,
+"capex_ventas": 0.025,
+"nof_ventas": -0.11
+},
+{
+"ticker": "AAPL",
+"escenario": "opt",
+"anio": 2,
+"crecimiento": 0.2132017137048027,
+"margen_ebit": 0.3215528975389026,
+"amortizacion_ventas": 0.02822222222222222,
+"capex_ventas": 0.02696924404587148,
+"nof_ventas": -0.1088888888888889
+},
+{
+"ticker": "AAPL",
+"escenario": "opt",
+"anio": 3,
+"crecimiento": 0.19092649949170237,
+"margen_ebit": 0.3263587853465398,
+"amortizacion_ventas": 0.028444444444444446,
+"capex_ventas": 0.028938488091742955,
+"nof_ventas": -0.10777777777777778
+},
+{
+"ticker": "AAPL",
+"escenario": "opt",
+"anio": 4,
+"crecimiento": 0.16865128527860201,
+"margen_ebit": 0.33116467315417697,
+"amortizacion_ventas": 0.028666666666666667,
+"capex_ventas": 0.030907732137614434,
+"nof_ventas": -0.10666666666666667
+},
+{
+"ticker": "AAPL",
+"escenario": "opt",
+"anio": 5,
+"crecimiento": 0.14637607106550168,
+"margen_ebit": 0.3359705609618141,
+"amortizacion_ventas": 0.028888888888888888,
+"capex_ventas": 0.03287697618348591,
+"nof_ventas": -0.10555555555555556
+},
+{
+"ticker": "AAPL",
+"escenario": "opt",
+"anio": 6,
+"crecimiento": 0.12410085685240135,
+"margen_ebit": 0.3407764487694513,
+"amortizacion_ventas": 0.029111111111111112,
+"capex_ventas": 0.03484622022935739,
+"nof_ventas": -0.10444444444444445
+},
+{
+"ticker": "AAPL",
+"escenario": "opt",
+"anio": 7,
+"crecimiento": 0.10182564263930102,
+"margen_ebit": 0.3455823365770885,
+"amortizacion_ventas": 0.029333333333333333,
+"capex_ventas": 0.03681546427522887,
+"nof_ventas": -0.10333333333333333
+},
+{
+"ticker": "AAPL",
+"escenario": "opt",
+"anio": 8,
+"crecimiento": 0.07955042842620066,
+"margen_ebit": 0.3503882243847256,
+"amortizacion_ventas": 0.029555555555555554,
+"capex_ventas": 0.03878470832110034,
+"nof_ventas": -0.10222222222222223
+},
+{
+"ticker": "AAPL",
+"escenario": "opt",
+"anio": 9,
+"crecimiento": 0.057275214213100334,
+"margen_ebit": 0.3551941121923628,
+"amortizacion_ventas": 0.029777777777777778,
+"capex_ventas": 0.040753952366971824,
+"nof_ventas": -0.10111111111111112
+},
+{
+"ticker": "AAPL",
+"escenario": "opt",
+"anio": 10,
+"crecimiento": 0.035,
+"margen_ebit": 0.36,
+"amortizacion_ventas": 0.03,
+"capex_ventas": 0.0427231964128433,
+"nof_ventas": -0.1
+},
+{
+"ticker": "MSFT",
+"escenario": "pes",
+"anio": 1,
+"crecimiento": 0.14513363408158786,
+"margen_ebit": 0.4710877316046191,
+"amortizacion_ventas": 0.13,
+"capex_ventas": 0.45,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "pes",
+"anio": 2,
+"crecimiento": 0.10713157935320683,
+"margen_ebit": 0.4716009151346609,
+"amortizacion_ventas": 0.12833333333333333,
+"capex_ventas": 0.4161990991241495,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "pes",
+"anio": 3,
+"crecimiento": 0.09811513193405598,
+"margen_ebit": 0.45765080074282827,
+"amortizacion_ventas": 0.12666666666666668,
+"capex_ventas": 0.382398198248299,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "pes",
+"anio": 4,
+"crecimiento": 0.08909868451490513,
+"margen_ebit": 0.4437006863509957,
+"amortizacion_ventas": 0.125,
+"capex_ventas": 0.3485972973724485,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "pes",
+"anio": 5,
+"crecimiento": 0.08008223709575427,
+"margen_ebit": 0.42975057195916305,
+"amortizacion_ventas": 0.12333333333333334,
+"capex_ventas": 0.31479639649659796,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "pes",
+"anio": 6,
+"crecimiento": 0.07106578967660342,
+"margen_ebit": 0.4158004575673304,
+"amortizacion_ventas": 0.12166666666666667,
+"capex_ventas": 0.28099549562074744,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "pes",
+"anio": 7,
+"crecimiento": 0.06204934225745257,
+"margen_ebit": 0.40185034317549784,
+"amortizacion_ventas": 0.12000000000000001,
+"capex_ventas": 0.24719459474489694,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "pes",
+"anio": 8,
+"crecimiento": 0.05303289483830171,
+"margen_ebit": 0.3879002287836652,
+"amortizacion_ventas": 0.11833333333333335,
+"capex_ventas": 0.21339369386904644,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "pes",
+"anio": 9,
+"crecimiento": 0.04401644741915085,
+"margen_ebit": 0.37395011439183257,
+"amortizacion_ventas": 0.11666666666666667,
+"capex_ventas": 0.17959279299319592,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "pes",
+"anio": 10,
+"crecimiento": 0.035,
+"margen_ebit": 0.36,
+"amortizacion_ventas": 0.115,
+"capex_ventas": 0.1457918921173454,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "base",
+"anio": 1,
+"crecimiento": 0.17909759335099262,
+"margen_ebit": 0.4710877316046191,
+"amortizacion_ventas": 0.13,
+"capex_ventas": 0.45,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "base",
+"anio": 2,
+"crecimiento": 0.19598749011220917,
+"margen_ebit": 0.4716009151346609,
+"amortizacion_ventas": 0.12833333333333333,
+"capex_ventas": 0.4161990991241495,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "base",
+"anio": 3,
+"crecimiento": 0.17586405384818302,
+"margen_ebit": 0.4651508007428283,
+"amortizacion_ventas": 0.12666666666666668,
+"capex_ventas": 0.382398198248299,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "base",
+"anio": 4,
+"crecimiento": 0.1557406175841569,
+"margen_ebit": 0.4587006863509957,
+"amortizacion_ventas": 0.125,
+"capex_ventas": 0.3485972973724485,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "base",
+"anio": 5,
+"crecimiento": 0.13561718132013073,
+"margen_ebit": 0.4522505719591631,
+"amortizacion_ventas": 0.12333333333333334,
+"capex_ventas": 0.31479639649659796,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "base",
+"anio": 6,
+"crecimiento": 0.11549374505610459,
+"margen_ebit": 0.44580045756733044,
+"amortizacion_ventas": 0.12166666666666667,
+"capex_ventas": 0.28099549562074744,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "base",
+"anio": 7,
+"crecimiento": 0.09537030879207845,
+"margen_ebit": 0.4393503431754978,
+"amortizacion_ventas": 0.12000000000000001,
+"capex_ventas": 0.24719459474489694,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "base",
+"anio": 8,
+"crecimiento": 0.07524687252805229,
+"margen_ebit": 0.4329002287836652,
+"amortizacion_ventas": 0.11833333333333335,
+"capex_ventas": 0.21339369386904644,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "base",
+"anio": 9,
+"crecimiento": 0.05512343626402616,
+"margen_ebit": 0.4264501143918326,
+"amortizacion_ventas": 0.11666666666666667,
+"capex_ventas": 0.17959279299319592,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "base",
+"anio": 10,
+"crecimiento": 0.035,
+"margen_ebit": 0.42,
+"amortizacion_ventas": 0.115,
+"capex_ventas": 0.1457918921173454,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "opt",
+"anio": 1,
+"crecimiento": 0.21359794186337355,
+"margen_ebit": 0.479211469868773,
+"amortizacion_ventas": 0.13,
+"capex_ventas": 0.45,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "opt",
+"anio": 2,
+"crecimiento": 0.28555542723866534,
+"margen_ebit": 0.48170477137176937,
+"amortizacion_ventas": 0.12833333333333333,
+"capex_ventas": 0.4161990991241495,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "opt",
+"anio": 3,
+"crecimiento": 0.2542359988338322,
+"margen_ebit": 0.4789916749502982,
+"amortizacion_ventas": 0.12666666666666668,
+"capex_ventas": 0.382398198248299,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "opt",
+"anio": 4,
+"crecimiento": 0.222916570428999,
+"margen_ebit": 0.47627857852882705,
+"amortizacion_ventas": 0.125,
+"capex_ventas": 0.3485972973724485,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "opt",
+"anio": 5,
+"crecimiento": 0.19159714202416583,
+"margen_ebit": 0.4735654821073559,
+"amortizacion_ventas": 0.12333333333333334,
+"capex_ventas": 0.31479639649659796,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "opt",
+"anio": 6,
+"crecimiento": 0.16027771361933268,
+"margen_ebit": 0.4708523856858847,
+"amortizacion_ventas": 0.12166666666666667,
+"capex_ventas": 0.28099549562074744,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "opt",
+"anio": 7,
+"crecimiento": 0.12895828521449954,
+"margen_ebit": 0.4681392892644135,
+"amortizacion_ventas": 0.12000000000000001,
+"capex_ventas": 0.24719459474489694,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "opt",
+"anio": 8,
+"crecimiento": 0.09763885680966636,
+"margen_ebit": 0.46542619284294234,
+"amortizacion_ventas": 0.11833333333333335,
+"capex_ventas": 0.21339369386904644,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "opt",
+"anio": 9,
+"crecimiento": 0.06631942840483318,
+"margen_ebit": 0.4627130964214712,
+"amortizacion_ventas": 0.11666666666666667,
+"capex_ventas": 0.17959279299319592,
+"nof_ventas": -0.08
+},
+{
+"ticker": "MSFT",
+"escenario": "opt",
+"anio": 10,
+"crecimiento": 0.03500000000000003,
+"margen_ebit": 0.46,
+"amortizacion_ventas": 0.115,
+"capex_ventas": 0.1457918921173454,
+"nof_ventas": -0.08
+},
+{
+"ticker": "NVDA",
+"escenario": "pes",
+"anio": 1,
+"crecimiento": 0.4708227594313117,
+"margen_ebit": 0.6387811147096613,
+"amortizacion_ventas": 0.015,
+"capex_ventas": 0.03,
+"nof_ventas": 0.14
+},
+{
+"ticker": "NVDA",
+"escenario": "pes",
+"anio": 2,
+"crecimiento": 0.12202914630749129,
+"margen_ebit": 0.6472435146247917,
+"amortizacion_ventas": 0.016666666666666666,
+"capex_ventas": 0.03054502179697614,
+"nof_ventas": 0.13777777777777778
+},
+{
+"ticker": "NVDA",
+"escenario": "pes",
+"anio": 3,
+"crecimiento": 0.11052550301905488,
+"margen_ebit": 0.6138380752966928,
+"amortizacion_ventas": 0.018333333333333333,
+"capex_ventas": 0.031090043593952284,
+"nof_ventas": 0.13555555555555557
+},
+{
+"ticker": "NVDA",
+"escenario": "pes",
+"anio": 4,
+"crecimiento": 0.09902185973061847,
+"margen_ebit": 0.5804326359685937,
+"amortizacion_ventas": 0.02,
+"capex_ventas": 0.031635065390928425,
+"nof_ventas": 0.13333333333333333
+},
+{
+"ticker": "NVDA",
+"escenario": "pes",
+"anio": 5,
+"crecimiento": 0.08751821644218205,
+"margen_ebit": 0.5470271966404948,
+"amortizacion_ventas": 0.021666666666666667,
+"capex_ventas": 0.03218008718790457,
+"nof_ventas": 0.13111111111111112
+},
+{
+"ticker": "NVDA",
+"escenario": "pes",
+"anio": 6,
+"crecimiento": 0.07601457315374564,
+"margen_ebit": 0.5136217573123958,
+"amortizacion_ventas": 0.02333333333333333,
+"capex_ventas": 0.03272510898488071,
+"nof_ventas": 0.1288888888888889
+},
+{
+"ticker": "NVDA",
+"escenario": "pes",
+"anio": 7,
+"crecimiento": 0.06451092986530924,
+"margen_ebit": 0.48021631798429687,
+"amortizacion_ventas": 0.025,
+"capex_ventas": 0.03327013078185685,
+"nof_ventas": 0.12666666666666668
+},
+{
+"ticker": "NVDA",
+"escenario": "pes",
+"anio": 8,
+"crecimiento": 0.053007286576872814,
+"margen_ebit": 0.44681087865619795,
+"amortizacion_ventas": 0.026666666666666665,
+"capex_ventas": 0.033815152578832997,
+"nof_ventas": 0.12444444444444444
+},
+{
+"ticker": "NVDA",
+"escenario": "pes",
+"anio": 9,
+"crecimiento": 0.041503643288436406,
+"margen_ebit": 0.413405439328099,
+"amortizacion_ventas": 0.028333333333333332,
+"capex_ventas": 0.034360174375809134,
+"nof_ventas": 0.12222222222222222
+},
+{
+"ticker": "NVDA",
+"escenario": "pes",
+"anio": 10,
+"crecimiento": 0.03,
+"margen_ebit": 0.38,
+"amortizacion_ventas": 0.03,
+"capex_ventas": 0.03490519617278528,
+"nof_ventas": 0.12
+},
+{
+"ticker": "NVDA",
+"escenario": "base",
+"anio": 1,
+"crecimiento": 0.7575907644773408,
+"margen_ebit": 0.6387811147096613,
+"amortizacion_ventas": 0.015,
+"capex_ventas": 0.03,
+"nof_ventas": 0.14
+},
+{
+"ticker": "NVDA",
+"escenario": "base",
+"anio": 2,
+"crecimiento": 0.5731935681500951,
+"margen_ebit": 0.6472435146247917,
+"amortizacion_ventas": 0.016666666666666666,
+"capex_ventas": 0.03054502179697614,
+"nof_ventas": 0.13777777777777778
+},
+{
+"ticker": "NVDA",
+"escenario": "base",
+"anio": 3,
+"crecimiento": 0.5052943721313332,
+"margen_ebit": 0.6288380752966927,
+"amortizacion_ventas": 0.018333333333333333,
+"capex_ventas": 0.031090043593952284,
+"nof_ventas": 0.13555555555555557
+},
+{
+"ticker": "NVDA",
+"escenario": "base",
+"anio": 4,
+"crecimiento": 0.4373951761125714,
+"margen_ebit": 0.6104326359685938,
+"amortizacion_ventas": 0.02,
+"capex_ventas": 0.031635065390928425,
+"nof_ventas": 0.13333333333333333
+},
+{
+"ticker": "NVDA",
+"escenario": "base",
+"anio": 5,
+"crecimiento": 0.36949598009380946,
+"margen_ebit": 0.5920271966404949,
+"amortizacion_ventas": 0.021666666666666667,
+"capex_ventas": 0.03218008718790457,
+"nof_ventas": 0.13111111111111112
+},
+{
+"ticker": "NVDA",
+"escenario": "base",
+"anio": 6,
+"crecimiento": 0.3015967840750476,
+"margen_ebit": 0.5736217573123958,
+"amortizacion_ventas": 0.02333333333333333,
+"capex_ventas": 0.03272510898488071,
+"nof_ventas": 0.1288888888888889
+},
+{
+"ticker": "NVDA",
+"escenario": "base",
+"anio": 7,
+"crecimiento": 0.2336975880562857,
+"margen_ebit": 0.5552163179842968,
+"amortizacion_ventas": 0.025,
+"capex_ventas": 0.03327013078185685,
+"nof_ventas": 0.12666666666666668
+},
+{
+"ticker": "NVDA",
+"escenario": "base",
+"anio": 8,
+"crecimiento": 0.16579839203752378,
+"margen_ebit": 0.5368108786561979,
+"amortizacion_ventas": 0.026666666666666665,
+"capex_ventas": 0.033815152578832997,
+"nof_ventas": 0.12444444444444444
+},
+{
+"ticker": "NVDA",
+"escenario": "base",
+"anio": 9,
+"crecimiento": 0.0978991960187619,
+"margen_ebit": 0.518405439328099,
+"amortizacion_ventas": 0.028333333333333332,
+"capex_ventas": 0.034360174375809134,
+"nof_ventas": 0.12222222222222222
+},
+{
+"ticker": "NVDA",
+"escenario": "base",
+"anio": 10,
+"crecimiento": 0.030000000000000027,
+"margen_ebit": 0.5,
+"amortizacion_ventas": 0.03,
+"capex_ventas": 0.03490519617278528,
+"nof_ventas": 0.12
+},
+{
+"ticker": "NVDA",
+"escenario": "opt",
+"anio": 1,
+"crecimiento": 0.9112321916536601,
+"margen_ebit": 0.6629369283999219,
+"amortizacion_ventas": 0.015,
+"capex_ventas": 0.03,
+"nof_ventas": 0.14
+},
+{
+"ticker": "NVDA",
+"escenario": "opt",
+"anio": 2,
+"crecimiento": 0.7827500185230655,
+"margen_ebit": 0.6792910602775819,
+"amortizacion_ventas": 0.016666666666666666,
+"capex_ventas": 0.03054502179697614,
+"nof_ventas": 0.13777777777777778
+},
+{
+"ticker": "NVDA",
+"escenario": "opt",
+"anio": 3,
+"crecimiento": 0.6886562662076823,
+"margen_ebit": 0.6668796777428841,
+"amortizacion_ventas": 0.018333333333333333,
+"capex_ventas": 0.031090043593952284,
+"nof_ventas": 0.13555555555555557
+},
+{
+"ticker": "NVDA",
+"escenario": "opt",
+"anio": 4,
+"crecimiento": 0.5945625138922991,
+"margen_ebit": 0.6544682952081864,
+"amortizacion_ventas": 0.02,
+"capex_ventas": 0.031635065390928425,
+"nof_ventas": 0.13333333333333333
+},
+{
+"ticker": "NVDA",
+"escenario": "opt",
+"anio": 5,
+"crecimiento": 0.5004687615769159,
+"margen_ebit": 0.6420569126734886,
+"amortizacion_ventas": 0.021666666666666667,
+"capex_ventas": 0.03218008718790457,
+"nof_ventas": 0.13111111111111112
+},
+{
+"ticker": "NVDA",
+"escenario": "opt",
+"anio": 6,
+"crecimiento": 0.40637500926153275,
+"margen_ebit": 0.6296455301387909,
+"amortizacion_ventas": 0.02333333333333333,
+"capex_ventas": 0.03272510898488071,
+"nof_ventas": 0.1288888888888889
+},
+{
+"ticker": "NVDA",
+"escenario": "opt",
+"anio": 7,
+"crecimiento": 0.31228125694614955,
+"margen_ebit": 0.6172341476040932,
+"amortizacion_ventas": 0.025,
+"capex_ventas": 0.03327013078185685,
+"nof_ventas": 0.12666666666666668
+},
+{
+"ticker": "NVDA",
+"escenario": "opt",
+"anio": 8,
+"crecimiento": 0.21818750463076642,
+"margen_ebit": 0.6048227650693955,
+"amortizacion_ventas": 0.026666666666666665,
+"capex_ventas": 0.033815152578832997,
+"nof_ventas": 0.12444444444444444
+},
+{
+"ticker": "NVDA",
+"escenario": "opt",
+"anio": 9,
+"crecimiento": 0.12409375231538322,
+"margen_ebit": 0.5924113825346977,
+"amortizacion_ventas": 0.028333333333333332,
+"capex_ventas": 0.034360174375809134,
+"nof_ventas": 0.12222222222222222
+},
+{
+"ticker": "NVDA",
+"escenario": "opt",
+"anio": 10,
+"crecimiento": 0.030000000000000027,
+"margen_ebit": 0.58,
+"amortizacion_ventas": 0.03,
+"capex_ventas": 0.03490519617278528,
+"nof_ventas": 0.12
+},
+{
+"ticker": "GOOGL",
+"escenario": "pes",
+"anio": 1,
+"crecimiento": 0.15368343150667507,
+"margen_ebit": 0.34966045359618425,
+"amortizacion_ventas": 0.065,
+"capex_ventas": 0.45,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "pes",
+"anio": 2,
+"crecimiento": 0.09105636433473527,
+"margen_ebit": 0.3616203316724697,
+"amortizacion_ventas": 0.06888888888888889,
+"capex_ventas": 0.4144851251676418,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "pes",
+"anio": 3,
+"crecimiento": 0.08404931879289336,
+"margen_ebit": 0.351417790213411,
+"amortizacion_ventas": 0.07277777777777777,
+"capex_ventas": 0.3789702503352836,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "pes",
+"anio": 4,
+"crecimiento": 0.07704227325105145,
+"margen_ebit": 0.3412152487543523,
+"amortizacion_ventas": 0.07666666666666667,
+"capex_ventas": 0.3434553755029254,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "pes",
+"anio": 5,
+"crecimiento": 0.07003522770920954,
+"margen_ebit": 0.3310127072952936,
+"amortizacion_ventas": 0.08055555555555556,
+"capex_ventas": 0.30794050067056716,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "pes",
+"anio": 6,
+"crecimiento": 0.06302818216736764,
+"margen_ebit": 0.3208101658362349,
+"amortizacion_ventas": 0.08444444444444445,
+"capex_ventas": 0.27242562583820895,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "pes",
+"anio": 7,
+"crecimiento": 0.05602113662552573,
+"margen_ebit": 0.31060762437717615,
+"amortizacion_ventas": 0.08833333333333333,
+"capex_ventas": 0.23691075100585074,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "pes",
+"anio": 8,
+"crecimiento": 0.04901409108368382,
+"margen_ebit": 0.30040508291811746,
+"amortizacion_ventas": 0.09222222222222223,
+"capex_ventas": 0.20139587617349253,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "pes",
+"anio": 9,
+"crecimiento": 0.04200704554184191,
+"margen_ebit": 0.29020254145905877,
+"amortizacion_ventas": 0.09611111111111112,
+"capex_ventas": 0.16588100134113432,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "pes",
+"anio": 10,
+"crecimiento": 0.035,
+"margen_ebit": 0.28,
+"amortizacion_ventas": 0.1,
+"capex_ventas": 0.1303661265087761,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "base",
+"anio": 1,
+"crecimiento": 0.2399628480174556,
+"margen_ebit": 0.35699347604471826,
+"amortizacion_ventas": 0.065,
+"capex_ventas": 0.45,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "base",
+"anio": 2,
+"crecimiento": 0.23383718162365305,
+"margen_ebit": 0.3616203316724697,
+"amortizacion_ventas": 0.06888888888888889,
+"capex_ventas": 0.4144851251676418,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "base",
+"anio": 3,
+"crecimiento": 0.20898253392069643,
+"margen_ebit": 0.357667790213411,
+"amortizacion_ventas": 0.07277777777777777,
+"capex_ventas": 0.3789702503352836,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "base",
+"anio": 4,
+"crecimiento": 0.1841278862177398,
+"margen_ebit": 0.3537152487543523,
+"amortizacion_ventas": 0.07666666666666667,
+"capex_ventas": 0.3434553755029254,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "base",
+"anio": 5,
+"crecimiento": 0.15927323851478314,
+"margen_ebit": 0.3497627072952936,
+"amortizacion_ventas": 0.08055555555555556,
+"capex_ventas": 0.30794050067056716,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "base",
+"anio": 6,
+"crecimiento": 0.13441859081182653,
+"margen_ebit": 0.34581016583623486,
+"amortizacion_ventas": 0.08444444444444445,
+"capex_ventas": 0.27242562583820895,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "base",
+"anio": 7,
+"crecimiento": 0.1095639431088699,
+"margen_ebit": 0.34185762437717615,
+"amortizacion_ventas": 0.08833333333333333,
+"capex_ventas": 0.23691075100585074,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "base",
+"anio": 8,
+"crecimiento": 0.08470929540591327,
+"margen_ebit": 0.33790508291811744,
+"amortizacion_ventas": 0.09222222222222223,
+"capex_ventas": 0.20139587617349253,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "base",
+"anio": 9,
+"crecimiento": 0.05985464770295665,
+"margen_ebit": 0.3339525414590587,
+"amortizacion_ventas": 0.09611111111111112,
+"capex_ventas": 0.16588100134113432,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "base",
+"anio": 10,
+"crecimiento": 0.035,
+"margen_ebit": 0.33,
+"amortizacion_ventas": 0.1,
+"capex_ventas": 0.1303661265087761,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "opt",
+"anio": 1,
+"crecimiento": 0.3300825952837312,
+"margen_ebit": 0.3860763645278649,
+"amortizacion_ventas": 0.065,
+"capex_ventas": 0.45,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "opt",
+"anio": 2,
+"crecimiento": 0.3669811288267937,
+"margen_ebit": 0.3754414658795722,
+"amortizacion_ventas": 0.06888888888888889,
+"capex_ventas": 0.4144851251676418,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "opt",
+"anio": 3,
+"crecimiento": 0.3254834877234445,
+"margen_ebit": 0.3747612826446257,
+"amortizacion_ventas": 0.07277777777777777,
+"capex_ventas": 0.3789702503352836,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "opt",
+"anio": 4,
+"crecimiento": 0.2839858466200953,
+"margen_ebit": 0.37408109940967915,
+"amortizacion_ventas": 0.07666666666666667,
+"capex_ventas": 0.3434553755029254,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "opt",
+"anio": 5,
+"crecimiento": 0.24248820551674605,
+"margen_ebit": 0.37340091617473264,
+"amortizacion_ventas": 0.08055555555555556,
+"capex_ventas": 0.30794050067056716,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "opt",
+"anio": 6,
+"crecimiento": 0.20099056441339685,
+"margen_ebit": 0.37272073293978614,
+"amortizacion_ventas": 0.08444444444444445,
+"capex_ventas": 0.27242562583820895,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "opt",
+"anio": 7,
+"crecimiento": 0.15949292331004766,
+"margen_ebit": 0.3720405497048396,
+"amortizacion_ventas": 0.08833333333333333,
+"capex_ventas": 0.23691075100585074,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "opt",
+"anio": 8,
+"crecimiento": 0.11799528220669844,
+"margen_ebit": 0.37136036646989307,
+"amortizacion_ventas": 0.09222222222222223,
+"capex_ventas": 0.20139587617349253,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "opt",
+"anio": 9,
+"crecimiento": 0.07649764110334922,
+"margen_ebit": 0.3706801832349465,
+"amortizacion_ventas": 0.09611111111111112,
+"capex_ventas": 0.16588100134113432,
+"nof_ventas": -0.06
+},
+{
+"ticker": "GOOGL",
+"escenario": "opt",
+"anio": 10,
+"crecimiento": 0.03500000000000003,
+"margen_ebit": 0.37,
+"amortizacion_ventas": 0.1,
+"capex_ventas": 0.1303661265087761,
+"nof_ventas": -0.06
+},
+{
+"ticker": "AMZN",
+"escenario": "pes",
+"anio": 1,
+"crecimiento": 0.10124620557314157,
+"margen_ebit": 0.12313594948012171,
+"amortizacion_ventas": 0.07,
+"capex_ventas": 0.23,
+"nof_ventas": -0.12
+},
+{
+"ticker": "AMZN",
+"escenario": "pes",
+"anio": 2,
+"crecimiento": 0.0787107519830203,
+"margen_ebit": 0.13093886360495344,
+"amortizacion_ventas": 0.07111111111111111,
+"capex_ventas": 0.21519166494814046,
+"nof_ventas": -0.11777777777777777
+},
+{
+"ticker": "AMZN",
+"escenario": "pes",
+"anio": 3,
+"crecimiento": 0.07324690798514276,
+"margen_ebit": 0.13082150565433426,
+"amortizacion_ventas": 0.07222222222222223,
+"capex_ventas": 0.20038332989628088,
+"nof_ventas": -0.11555555555555555
+},
+{
+"ticker": "AMZN",
+"escenario": "pes",
+"anio": 4,
+"crecimiento": 0.06778306398726522,
+"margen_ebit": 0.13070414770371508,
+"amortizacion_ventas": 0.07333333333333333,
+"capex_ventas": 0.18557499484442136,
+"nof_ventas": -0.11333333333333333
+},
+{
+"ticker": "AMZN",
+"escenario": "pes",
+"anio": 5,
+"crecimiento": 0.06231921998938769,
+"margen_ebit": 0.1305867897530959,
+"amortizacion_ventas": 0.07444444444444445,
+"capex_ventas": 0.17076665979256178,
+"nof_ventas": -0.1111111111111111
+},
+{
+"ticker": "AMZN",
+"escenario": "pes",
+"anio": 6,
+"crecimiento": 0.05685537599151015,
+"margen_ebit": 0.13046943180247672,
+"amortizacion_ventas": 0.07555555555555556,
+"capex_ventas": 0.15595832474070223,
+"nof_ventas": -0.1088888888888889
+},
+{
+"ticker": "AMZN",
+"escenario": "pes",
+"anio": 7,
+"crecimiento": 0.05139153199363261,
+"margen_ebit": 0.13035207385185754,
+"amortizacion_ventas": 0.07666666666666667,
+"capex_ventas": 0.14114998968884268,
+"nof_ventas": -0.10666666666666667
+},
+{
+"ticker": "AMZN",
+"escenario": "pes",
+"anio": 8,
+"crecimiento": 0.04592768799575508,
+"margen_ebit": 0.13023471590123836,
+"amortizacion_ventas": 0.07777777777777778,
+"capex_ventas": 0.1263416546369831,
+"nof_ventas": -0.10444444444444445
+},
+{
+"ticker": "AMZN",
+"escenario": "pes",
+"anio": 9,
+"crecimiento": 0.040463843997877544,
+"margen_ebit": 0.13011735795061918,
+"amortizacion_ventas": 0.0788888888888889,
+"capex_ventas": 0.11153331958512355,
+"nof_ventas": -0.10222222222222223
+},
+{
+"ticker": "AMZN",
+"escenario": "pes",
+"anio": 10,
+"crecimiento": 0.035,
+"margen_ebit": 0.13,
+"amortizacion_ventas": 0.08,
+"capex_ventas": 0.096724984533264,
+"nof_ventas": -0.1
+},
+{
+"ticker": "AMZN",
+"escenario": "base",
+"anio": 1,
+"crecimiento": 0.1392022519175098,
+"margen_ebit": 0.14099421785712882,
+"amortizacion_ventas": 0.07,
+"capex_ventas": 0.23,
+"nof_ventas": -0.12
+},
+{
+"ticker": "AMZN",
+"escenario": "base",
+"anio": 2,
+"crecimiento": 0.13957156510901741,
+"margen_ebit": 0.14948015064202283,
+"amortizacion_ventas": 0.07111111111111111,
+"capex_ventas": 0.21519166494814046,
+"nof_ventas": -0.11777777777777777
+},
+{
+"ticker": "AMZN",
+"escenario": "base",
+"anio": 3,
+"crecimiento": 0.12650011947039025,
+"margen_ebit": 0.15204513181176998,
+"amortizacion_ventas": 0.07222222222222223,
+"capex_ventas": 0.20038332989628088,
+"nof_ventas": -0.11555555555555555
+},
+{
+"ticker": "AMZN",
+"escenario": "base",
+"anio": 4,
+"crecimiento": 0.11342867383176305,
+"margen_ebit": 0.1546101129815171,
+"amortizacion_ventas": 0.07333333333333333,
+"capex_ventas": 0.18557499484442136,
+"nof_ventas": -0.11333333333333333
+},
+{
+"ticker": "AMZN",
+"escenario": "base",
+"anio": 5,
+"crecimiento": 0.10035722819313589,
+"margen_ebit": 0.15717509415126427,
+"amortizacion_ventas": 0.07444444444444445,
+"capex_ventas": 0.17076665979256178,
+"nof_ventas": -0.1111111111111111
+},
+{
+"ticker": "AMZN",
+"escenario": "base",
+"anio": 6,
+"crecimiento": 0.08728578255450871,
+"margen_ebit": 0.15974007532101142,
+"amortizacion_ventas": 0.07555555555555556,
+"capex_ventas": 0.15595832474070223,
+"nof_ventas": -0.1088888888888889
+},
+{
+"ticker": "AMZN",
+"escenario": "base",
+"anio": 7,
+"crecimiento": 0.07421433691588153,
+"margen_ebit": 0.16230505649075858,
+"amortizacion_ventas": 0.07666666666666667,
+"capex_ventas": 0.14114998968884268,
+"nof_ventas": -0.10666666666666667
+},
+{
+"ticker": "AMZN",
+"escenario": "base",
+"anio": 8,
+"crecimiento": 0.06114289127725436,
+"margen_ebit": 0.16487003766050573,
+"amortizacion_ventas": 0.07777777777777778,
+"capex_ventas": 0.1263416546369831,
+"nof_ventas": -0.10444444444444445
+},
+{
+"ticker": "AMZN",
+"escenario": "base",
+"anio": 9,
+"crecimiento": 0.04807144563862718,
+"margen_ebit": 0.16743501883025286,
+"amortizacion_ventas": 0.0788888888888889,
+"capex_ventas": 0.11153331958512355,
+"nof_ventas": -0.10222222222222223
+},
+{
+"ticker": "AMZN",
+"escenario": "base",
+"anio": 10,
+"crecimiento": 0.035,
+"margen_ebit": 0.17,
+"amortizacion_ventas": 0.08,
+"capex_ventas": 0.096724984533264,
+"nof_ventas": -0.1
+},
+{
+"ticker": "AMZN",
+"escenario": "opt",
+"anio": 1,
+"crecimiento": 0.17507693307062477,
+"margen_ebit": 0.17444708010968266,
+"amortizacion_ventas": 0.07,
+"capex_ventas": 0.23,
+"nof_ventas": -0.12
+},
+{
+"ticker": "AMZN",
+"escenario": "opt",
+"anio": 2,
+"crecimiento": 0.1923253172877028,
+"margen_ebit": 0.2041726949907719,
+"amortizacion_ventas": 0.07111111111111111,
+"capex_ventas": 0.21519166494814046,
+"nof_ventas": -0.11777777777777777
+},
+{
+"ticker": "AMZN",
+"escenario": "opt",
+"anio": 3,
+"crecimiento": 0.17265965262673996,
+"margen_ebit": 0.2036511081169254,
+"amortizacion_ventas": 0.07222222222222223,
+"capex_ventas": 0.20038332989628088,
+"nof_ventas": -0.11555555555555555
+},
+{
+"ticker": "AMZN",
+"escenario": "opt",
+"anio": 4,
+"crecimiento": 0.1529939879657771,
+"margen_ebit": 0.20312952124307893,
+"amortizacion_ventas": 0.07333333333333333,
+"capex_ventas": 0.18557499484442136,
+"nof_ventas": -0.11333333333333333
+},
+{
+"ticker": "AMZN",
+"escenario": "opt",
+"anio": 5,
+"crecimiento": 0.13332832330481426,
+"margen_ebit": 0.20260793436923244,
+"amortizacion_ventas": 0.07444444444444445,
+"capex_ventas": 0.17076665979256178,
+"nof_ventas": -0.1111111111111111
+},
+{
+"ticker": "AMZN",
+"escenario": "opt",
+"anio": 6,
+"crecimiento": 0.1136626586438514,
+"margen_ebit": 0.20208634749538595,
+"amortizacion_ventas": 0.07555555555555556,
+"capex_ventas": 0.15595832474070223,
+"nof_ventas": -0.1088888888888889
+},
+{
+"ticker": "AMZN",
+"escenario": "opt",
+"anio": 7,
+"crecimiento": 0.09399699398288855,
+"margen_ebit": 0.20156476062153947,
+"amortizacion_ventas": 0.07666666666666667,
+"capex_ventas": 0.14114998968884268,
+"nof_ventas": -0.10666666666666667
+},
+{
+"ticker": "AMZN",
+"escenario": "opt",
+"anio": 8,
+"crecimiento": 0.07433132932192571,
+"margen_ebit": 0.20104317374769298,
+"amortizacion_ventas": 0.07777777777777778,
+"capex_ventas": 0.1263416546369831,
+"nof_ventas": -0.10444444444444445
+},
+{
+"ticker": "AMZN",
+"escenario": "opt",
+"anio": 9,
+"crecimiento": 0.05466566466096284,
+"margen_ebit": 0.2005215868738465,
+"amortizacion_ventas": 0.0788888888888889,
+"capex_ventas": 0.11153331958512355,
+"nof_ventas": -0.10222222222222223
+},
+{
+"ticker": "AMZN",
+"escenario": "opt",
+"anio": 10,
+"crecimiento": 0.035,
+"margen_ebit": 0.2,
+"amortizacion_ventas": 0.08,
+"capex_ventas": 0.096724984533264,
+"nof_ventas": -0.1
+},
+{
+"ticker": "META",
+"escenario": "pes",
+"anio": 1,
+"crecimiento": 0.1733993971604868,
+"margen_ebit": 0.26427709706746483,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.6,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "pes",
+"anio": 2,
+"crecimiento": 0.10518147189043812,
+"margen_ebit": 0.30533413839131834,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.5492922257828053,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "pes",
+"anio": 3,
+"crecimiento": 0.09640878790413336,
+"margen_ebit": 0.30466737109240355,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.4985844515656107,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "pes",
+"anio": 4,
+"crecimiento": 0.0876361039178286,
+"margen_ebit": 0.30400060379348876,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.4478766773484161,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "pes",
+"anio": 5,
+"crecimiento": 0.07886341993152382,
+"margen_ebit": 0.30333383649457396,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.39716890313122144,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "pes",
+"anio": 6,
+"crecimiento": 0.07009073594521906,
+"margen_ebit": 0.30266706919565917,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.3464611289140268,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "pes",
+"anio": 7,
+"crecimiento": 0.0613180519589143,
+"margen_ebit": 0.30200030189674437,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.2957533546968321,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "pes",
+"anio": 8,
+"crecimiento": 0.05254536797260953,
+"margen_ebit": 0.3013335345978296,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.24504558047963754,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "pes",
+"anio": 9,
+"crecimiento": 0.04377268398630477,
+"margen_ebit": 0.3006667672989148,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.19433780626244285,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "pes",
+"anio": 10,
+"crecimiento": 0.035,
+"margen_ebit": 0.3,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.1436300320452482,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "base",
+"anio": 1,
+"crecimiento": 0.21936663086531172,
+"margen_ebit": 0.3319542388412548,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.6,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "base",
+"anio": 2,
+"crecimiento": 0.1773893769886007,
+"margen_ebit": 0.3398262556728402,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.5492922257828053,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "base",
+"anio": 3,
+"crecimiento": 0.1595907048650256,
+"margen_ebit": 0.34234797371373515,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.4985844515656107,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "base",
+"anio": 4,
+"crecimiento": 0.14179203274145052,
+"margen_ebit": 0.3448696917546301,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.4478766773484161,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "base",
+"anio": 5,
+"crecimiento": 0.12399336061787543,
+"margen_ebit": 0.34739140979552513,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.39716890313122144,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "base",
+"anio": 6,
+"crecimiento": 0.10619468849430035,
+"margen_ebit": 0.3499131278364201,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.3464611289140268,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "base",
+"anio": 7,
+"crecimiento": 0.08839601637072526,
+"margen_ebit": 0.35243484587731505,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.2957533546968321,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "base",
+"anio": 8,
+"crecimiento": 0.07059734424715017,
+"margen_ebit": 0.35495656391821007,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.24504558047963754,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "base",
+"anio": 9,
+"crecimiento": 0.052798672123575086,
+"margen_ebit": 0.357478281959105,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.19433780626244285,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "base",
+"anio": 10,
+"crecimiento": 0.035,
+"margen_ebit": 0.36,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.1436300320452482,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "opt",
+"anio": 1,
+"crecimiento": 0.31913598322504066,
+"margen_ebit": 0.3663373896745065,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.6,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "opt",
+"anio": 2,
+"crecimiento": 0.36146523771806593,
+"margen_ebit": 0.3590353323133026,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.5492922257828053,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "opt",
+"anio": 3,
+"crecimiento": 0.3206570830033077,
+"margen_ebit": 0.36415591577413975,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.4985844515656107,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "opt",
+"anio": 4,
+"crecimiento": 0.27984892828854946,
+"margen_ebit": 0.36927649923497696,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.4478766773484161,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "opt",
+"anio": 5,
+"crecimiento": 0.23904077357379122,
+"margen_ebit": 0.3743970826958141,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.39716890313122144,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "opt",
+"anio": 6,
+"crecimiento": 0.19823261885903298,
+"margen_ebit": 0.3795176661566513,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.3464611289140268,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "opt",
+"anio": 7,
+"crecimiento": 0.15742446414427474,
+"margen_ebit": 0.3846382496174885,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.2957533546968321,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "opt",
+"anio": 8,
+"crecimiento": 0.11661630942951651,
+"margen_ebit": 0.38975883307832565,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.24504558047963754,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "opt",
+"anio": 9,
+"crecimiento": 0.07580815471475827,
+"margen_ebit": 0.39487941653916286,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.19433780626244285,
+"nof_ventas": -0.08
+},
+{
+"ticker": "META",
+"escenario": "opt",
+"anio": 10,
+"crecimiento": 0.03500000000000003,
+"margen_ebit": 0.4,
+"amortizacion_ventas": 0.11,
+"capex_ventas": 0.1436300320452482,
+"nof_ventas": -0.08
+},
+{
+"ticker": "TSLA",
+"escenario": "pes",
+"anio": 1,
+"crecimiento": 0.00024314680195614002,
+"margen_ebit": 0.008611951122175054,
+"amortizacion_ventas": 0.065,
+"capex_ventas": 0.17,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "pes",
+"anio": 2,
+"crecimiento": -0.0671828715912568,
+"margen_ebit": 0.01251828342683952,
+"amortizacion_ventas": 0.06444444444444444,
+"capex_ventas": 0.16041952500055334,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "pes",
+"anio": 3,
+"crecimiento": -0.054410012642349695,
+"margen_ebit": 0.01720349799848458,
+"amortizacion_ventas": 0.06388888888888888,
+"capex_ventas": 0.15083905000110664,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "pes",
+"anio": 4,
+"crecimiento": -0.0416371536934426,
+"margen_ebit": 0.021888712570129643,
+"amortizacion_ventas": 0.06333333333333334,
+"capex_ventas": 0.14125857500165998,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "pes",
+"anio": 5,
+"crecimiento": -0.0288642947445355,
+"margen_ebit": 0.0265739271417747,
+"amortizacion_ventas": 0.06277777777777778,
+"capex_ventas": 0.1316781000022133,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "pes",
+"anio": 6,
+"crecimiento": -0.016091435795628398,
+"margen_ebit": 0.03125914171341976,
+"amortizacion_ventas": 0.06222222222222222,
+"capex_ventas": 0.12209762500276661,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "pes",
+"anio": 7,
+"crecimiento": -0.003318576846721294,
+"margen_ebit": 0.03594435628506482,
+"amortizacion_ventas": 0.06166666666666667,
+"capex_ventas": 0.11251715000331992,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "pes",
+"anio": 8,
+"crecimiento": 0.009454282102185796,
+"margen_ebit": 0.04062957085670988,
+"amortizacion_ventas": 0.06111111111111111,
+"capex_ventas": 0.10293667500387325,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "pes",
+"anio": 9,
+"crecimiento": 0.0222271410510929,
+"margen_ebit": 0.045314785428354945,
+"amortizacion_ventas": 0.06055555555555556,
+"capex_ventas": 0.09335620000442657,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "pes",
+"anio": 10,
+"crecimiento": 0.035,
+"margen_ebit": 0.05,
+"amortizacion_ventas": 0.06,
+"capex_ventas": 0.08377572500497989,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "base",
+"anio": 1,
+"crecimiento": 0.10593274491570859,
+"margen_ebit": 0.02917632851843509,
+"amortizacion_ventas": 0.065,
+"capex_ventas": 0.17,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "base",
+"anio": 2,
+"crecimiento": 0.13766229530886753,
+"margen_ebit": 0.03272125732853344,
+"amortizacion_ventas": 0.06444444444444444,
+"capex_ventas": 0.16041952500055334,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "base",
+"anio": 3,
+"crecimiento": 0.1248295083952591,
+"margen_ebit": 0.04113110016246676,
+"amortizacion_ventas": 0.06388888888888888,
+"capex_ventas": 0.15083905000110664,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "base",
+"anio": 4,
+"crecimiento": 0.11199672148165066,
+"margen_ebit": 0.04954094299640008,
+"amortizacion_ventas": 0.06333333333333334,
+"capex_ventas": 0.14125857500165998,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "base",
+"anio": 5,
+"crecimiento": 0.0991639345680422,
+"margen_ebit": 0.057950785830333404,
+"amortizacion_ventas": 0.06277777777777778,
+"capex_ventas": 0.1316781000022133,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "base",
+"anio": 6,
+"crecimiento": 0.08633114765443377,
+"margen_ebit": 0.06636062866426673,
+"amortizacion_ventas": 0.06222222222222222,
+"capex_ventas": 0.12209762500276661,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "base",
+"anio": 7,
+"crecimiento": 0.07349836074082533,
+"margen_ebit": 0.07477047149820004,
+"amortizacion_ventas": 0.06166666666666667,
+"capex_ventas": 0.11251715000331992,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "base",
+"anio": 8,
+"crecimiento": 0.06066557382721688,
+"margen_ebit": 0.08318031433213337,
+"amortizacion_ventas": 0.06111111111111111,
+"capex_ventas": 0.10293667500387325,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "base",
+"anio": 9,
+"crecimiento": 0.04783278691360844,
+"margen_ebit": 0.0915901571660667,
+"amortizacion_ventas": 0.06055555555555556,
+"capex_ventas": 0.09335620000442657,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "base",
+"anio": 10,
+"crecimiento": 0.035,
+"margen_ebit": 0.1,
+"amortizacion_ventas": 0.06,
+"capex_ventas": 0.08377572500497989,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "opt",
+"anio": 1,
+"crecimiento": 0.25782399873491,
+"margen_ebit": 0.06204094966426159,
+"amortizacion_ventas": 0.065,
+"capex_ventas": 0.17,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "opt",
+"anio": 2,
+"crecimiento": 0.4196325975825217,
+"margen_ebit": 0.06270065688851068,
+"amortizacion_ventas": 0.06444444444444444,
+"capex_ventas": 0.16041952500055334,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "opt",
+"anio": 3,
+"crecimiento": 0.3715535228847065,
+"margen_ebit": 0.07361307477744684,
+"amortizacion_ventas": 0.06388888888888888,
+"capex_ventas": 0.15083905000110664,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "opt",
+"anio": 4,
+"crecimiento": 0.3234744481868913,
+"margen_ebit": 0.08452549266638301,
+"amortizacion_ventas": 0.06333333333333334,
+"capex_ventas": 0.14125857500165998,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "opt",
+"anio": 5,
+"crecimiento": 0.27539537348907606,
+"margen_ebit": 0.09543791055531917,
+"amortizacion_ventas": 0.06277777777777778,
+"capex_ventas": 0.1316781000022133,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "opt",
+"anio": 6,
+"crecimiento": 0.22731629879126086,
+"margen_ebit": 0.10635032844425533,
+"amortizacion_ventas": 0.06222222222222222,
+"capex_ventas": 0.12209762500276661,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "opt",
+"anio": 7,
+"crecimiento": 0.17923722409344567,
+"margen_ebit": 0.1172627463331915,
+"amortizacion_ventas": 0.06166666666666667,
+"capex_ventas": 0.11251715000331992,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "opt",
+"anio": 8,
+"crecimiento": 0.13115814939563042,
+"margen_ebit": 0.12817516422212766,
+"amortizacion_ventas": 0.06111111111111111,
+"capex_ventas": 0.10293667500387325,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "opt",
+"anio": 9,
+"crecimiento": 0.08307907469781523,
+"margen_ebit": 0.1390875821110638,
+"amortizacion_ventas": 0.06055555555555556,
+"capex_ventas": 0.09335620000442657,
+"nof_ventas": -0.05
+},
+{
+"ticker": "TSLA",
+"escenario": "opt",
+"anio": 10,
+"crecimiento": 0.03500000000000003,
+"margen_ebit": 0.15,
+"amortizacion_ventas": 0.06,
+"capex_ventas": 0.08377572500497989,
+"nof_ventas": -0.05
+}
+]
