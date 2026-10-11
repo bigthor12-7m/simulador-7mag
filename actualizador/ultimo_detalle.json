@@ -1,0 +1,271 @@
+{
+ "fecha_mercado": "2026-10-09",
+ "tipo_sin_riesgo": 0.0524,
+ "eurusd": 1.1205738,
+ "comparables": {
+  "AAPL": {
+   "px": 336.64,
+   "eps_ntm": 9.6,
+   "ratio_ventas": 1.1343,
+   "per_fwd": 35.0667,
+   "ev_ebitda_fwd": 25.9033,
+   "n": 40,
+   "ebitda_ttm": 167959.0031,
+   "ev_ebitda_ttm": 29.382,
+   "fuente_ev_ebitda": "quoteSummary"
+  },
+  "MSFT": {
+   "px": 535.07,
+   "eps_ntm": 20.8502,
+   "ratio_ventas": 1.243,
+   "per_fwd": 25.6625,
+   "ev_ebitda_fwd": 14.2586,
+   "n": 33,
+   "ebitda_ttm": 194237.0058,
+   "ev_ebitda_ttm": 17.7241,
+   "fuente_ev_ebitda": "statistics_2026-09-22"
+  },
+  "NVDA": {
+   "px": 229.28,
+   "eps_ntm": 14.2817,
+   "ratio_ventas": 2.068,
+   "per_fwd": 16.0542,
+   "ev_ebitda_fwd": 11.2079,
+   "n": 52,
+   "ebitda_ttm": 201266.004,
+   "ev_ebitda_ttm": 23.1783,
+   "fuente_ev_ebitda": "statistics_2026-09-23"
+  },
+  "GOOGL": {
+   "px": 351.66,
+   "eps_ntm": 14.5883,
+   "ratio_ventas": 1.3554,
+   "per_fwd": 24.1056,
+   "ev_ebitda_fwd": 9.3979,
+   "n": 53,
+   "ebitda_ttm": 173164.0033,
+   "ev_ebitda_ttm": 12.738,
+   "fuente_ev_ebitda": "statistics_2026-09-22"
+  },
+  "AMZN": {
+   "px": 262.43,
+   "eps_ntm": 10.337,
+   "ratio_ventas": 1.2286,
+   "per_fwd": 25.3874,
+   "ev_ebitda_fwd": 8.9368,
+   "n": 53,
+   "ebitda_ttm": 168911.9949,
+   "ev_ebitda_ttm": 10.9802,
+   "fuente_ev_ebitda": "statistics_2026-09-23"
+  },
+  "META": {
+   "px": 718.67,
+   "eps_ntm": 33.7726,
+   "ratio_ventas": 1.3288,
+   "per_fwd": 21.2797,
+   "ev_ebitda_fwd": 12.8527,
+   "n": 54,
+   "ebitda_ttm": 109654.999,
+   "ev_ebitda_ttm": 17.0789,
+   "fuente_ev_ebitda": "statistics_2026-09-23"
+  },
+  "TSLA": {
+   "px": 382.7,
+   "eps_ntm": 2.1276,
+   "ratio_ventas": 1.1602,
+   "per_fwd": 179.874,
+   "ev_ebitda_fwd": 105.6116,
+   "n": 31,
+   "ebitda_ttm": 10755.0003,
+   "ev_ebitda_ttm": 122.5356,
+   "fuente_ev_ebitda": "statistics_2026-09-23"
+  },
+  "AMD": {
+   "px": 608.1,
+   "eps_ntm": 14.5385,
+   "ratio_ventas": 2.0158,
+   "per_fwd": 41.8269,
+   "ev_ebitda_fwd": 46.0294,
+   "n": 50,
+   "ebitda_ttm": 9562.0004,
+   "ev_ebitda_ttm": 92.7879,
+   "fuente_ev_ebitda": "statistics_2026-09-23"
+  },
+  "AVGO": {
+   "px": 361.54,
+   "eps_ntm": 19.1402,
+   "ratio_ventas": 1.9279,
+   "per_fwd": 18.8891,
+   "ev_ebitda_fwd": 17.5933,
+   "n": 48,
+   "ebitda_ttm": 52259.9997,
+   "ev_ebitda_ttm": 33.9189,
+   "fuente_ev_ebitda": "statistics_2026-09-22"
+  },
+  "BYDDY": {
+   "px": 9.64,
+   "eps_ntm": 0.7694,
+   "ratio_ventas": 1.3735,
+   "per_fwd": null,
+   "ev_ebitda_fwd": null,
+   "n": 1,
+   "ebitda_ttm": 117829.0913,
+   "ev_ebitda_ttm": 6.0083,
+   "fuente_ev_ebitda": "statistics_2026-09-23"
+  },
+  "COST": {
+   "px": 946.92,
+   "eps_ntm": 23.0347,
+   "ratio_ventas": 1.0929,
+   "per_fwd": 41.1084,
+   "ev_ebitda_fwd": 24.633,
+   "n": 29,
+   "ebitda_ttm": 14184.9999,
+   "ev_ebitda_ttm": 26.9208,
+   "fuente_ev_ebitda": "statistics_2026-09-23"
+  },
+  "CRM": {
+   "px": 229.13,
+   "eps_ntm": 15.3973,
+   "ratio_ventas": 1.1383,
+   "per_fwd": 14.8812,
+   "ev_ebitda_fwd": 11.9185,
+   "n": 53,
+   "ebitda_ttm": 12899.0003,
+   "ev_ebitda_ttm": 13.5674,
+   "fuente_ev_ebitda": "statistics_2026-09-22"
+  },
+  "F": {
+   "px": 12.17,
+   "eps_ntm": 1.8379,
+   "ratio_ventas": 0.9592,
+   "per_fwd": 6.6216,
+   "ev_ebitda_fwd": 54.49,
+   "n": 19,
+   "ebitda_ttm": 7642.9998,
+   "ev_ebitda_ttm": 52.2669,
+   "fuente_ev_ebitda": "statistics_2026-09-23"
+  },
+  "GM": {
+   "px": 82.73,
+   "eps_ntm": 14.187,
+   "ratio_ventas": 1.0108,
+   "per_fwd": 5.8314,
+   "ev_ebitda_fwd": 9.9665,
+   "n": 22,
+   "ebitda_ttm": 16462.0001,
+   "ev_ebitda_ttm": 10.0743,
+   "fuente_ev_ebitda": "statistics_2026-09-23"
+  },
+  "MU": {
+   "px": 1029.0,
+   "eps_ntm": 209.8486,
+   "ratio_ventas": 2.4464,
+   "per_fwd": 4.9035,
+   "ev_ebitda_fwd": 7.291,
+   "n": 36,
+   "ebitda_ttm": 108842.9998,
+   "ev_ebitda_ttm": 17.8369,
+   "fuente_ev_ebitda": "statistics_2026-09-22"
+  },
+  "ORCL": {
+   "px": 141.4,
+   "eps_ntm": 9.1665,
+   "ratio_ventas": 1.4663,
+   "per_fwd": 15.4258,
+   "ev_ebitda_fwd": 10.1421,
+   "n": 39,
+   "ebitda_ttm": 34432.9994,
+   "ev_ebitda_ttm": 14.871,
+   "fuente_ev_ebitda": "statistics_2026-09-23"
+  },
+  "PINS": {
+   "px": 21.4,
+   "eps_ntm": 2.616,
+   "ratio_ventas": 1.2419,
+   "per_fwd": 8.1805,
+   "ev_ebitda_fwd": 26.1384,
+   "n": 24,
+   "ebitda_ttm": 316.556,
+   "ev_ebitda_ttm": 32.4621,
+   "fuente_ev_ebitda": "statistics_2026-09-23"
+  },
+  "QCOM": {
+   "px": 175.5,
+   "eps_ntm": 10.1897,
+   "ratio_ventas": 1.0203,
+   "per_fwd": 17.2233,
+   "ev_ebitda_fwd": 15.8299,
+   "n": 34,
+   "ebitda_ttm": 11998.9996,
+   "ev_ebitda_ttm": 16.1507,
+   "fuente_ev_ebitda": "statistics_2026-09-23"
+  },
+  "RACE": {
+   "px": 389.91,
+   "eps_ntm": 12.0829,
+   "ratio_ventas": 1.1087,
+   "per_fwd": 32.2696,
+   "ev_ebitda_fwd": 20.8777,
+   "n": 9,
+   "ebitda_ttm": 2470.5989,
+   "ev_ebitda_ttm": 23.1465,
+   "fuente_ev_ebitda": "statistics_2026-09-23"
+  },
+  "RDDT": {
+   "px": 159.91,
+   "eps_ntm": 7.1191,
+   "ratio_ventas": 1.5813,
+   "per_fwd": 22.462,
+   "ev_ebitda_fwd": 20.8887,
+   "n": 29,
+   "ebitda_ttm": 801.517,
+   "ev_ebitda_ttm": 33.031,
+   "fuente_ev_ebitda": "statistics_2026-09-23"
+  },
+  "SAP": {
+   "px": 214.78,
+   "eps_ntm": 9.5775,
+   "ratio_ventas": 1.1633,
+   "per_fwd": 22.4254,
+   "ev_ebitda_fwd": null,
+   "n": 10,
+   "ebitda_ttm": 11760.0,
+   "ev_ebitda_ttm": null,
+   "fuente_ev_ebitda": "sin_dato"
+  },
+  "TM": {
+   "px": 185.3,
+   "eps_ntm": 19.4752,
+   "ratio_ventas": 1.0533,
+   "per_fwd": 9.5146,
+   "ev_ebitda_fwd": 7.2594,
+   "n": 3,
+   "ebitda_ttm": 5600540.885,
+   "ev_ebitda_ttm": 7.6462,
+   "fuente_ev_ebitda": "statistics_2026-09-23"
+  },
+  "TSM": {
+   "px": 453.31,
+   "eps_ntm": 21.5255,
+   "ratio_ventas": 1.611,
+   "per_fwd": 21.0592,
+   "ev_ebitda_fwd": 11.2887,
+   "n": 13,
+   "ebitda_ttm": 3167467.0776,
+   "ev_ebitda_ttm": 18.1857,
+   "fuente_ev_ebitda": "statistics_2026-09-22"
+  },
+  "WMT": {
+   "px": 111.35,
+   "eps_ntm": 3.1546,
+   "ratio_ventas": 1.0673,
+   "per_fwd": 35.2975,
+   "ev_ebitda_fwd": 18.8158,
+   "n": 42,
+   "ebitda_ttm": 44073.001,
+   "ev_ebitda_ttm": 20.0826,
+   "fuente_ev_ebitda": "statistics_2026-09-23"
+  }
+ }
+}
