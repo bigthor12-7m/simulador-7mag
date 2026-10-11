@@ -23,6 +23,8 @@ DATOS = BASE.parent / "app" / "datos"
 CONF = json.load(open(BASE / "configuracion.json", encoding="utf-8"))
 MODULOS = "price,summaryDetail,defaultKeyStatistics,financialData,earningsTrend,calendarEvents"
 SERIES = "trailingEnterprisesValueEBITDARatio,trailingEnterpriseValue,trailingMarketCap"
+# página Statistics de Yahoo guardada en la última valoración completa (respaldo si falta la serie de un comparable)
+RESPALDO = json.load(open(sorted((BASE / "snapshot").glob("yahoo_estadisticas_*.json"))[-1], encoding="utf-8"))
 r = lambda x: (x or {}).get("raw") if isinstance(x, dict) else x
 d = lambda s: dt.date.fromisoformat(s)
 
@@ -188,8 +190,13 @@ class Consenso:
         s = (self.series.get(t) or {}).get("trailingEnterprisesValueEBITDARatio")
         if s:
             self.fuente_ev[t] = "statistics_" + str(s["fecha"]); return s["valor"]
-        # alternativa: el ratio de quoteSummary, solo si cotización y estados financieros están en la misma divisa
         y = self.YQ[t]
+        # 1ª alternativa: el dato de la última valoración completa, escalado con la variación de la cotización
+        pr = RESPALDO.get(t) or {}
+        x0, px0, px = fnum(pr.get("Enterprise Value/EBITDA")), fnum(pr.get("px")), r(y.get("price", {}).get("regularMarketPrice"))
+        if x0 and px0 and px:
+            self.fuente_ev[t] = "valoracion_completa_escalado"; return x0 * px / px0
+        # 2ª alternativa: el ratio de quoteSummary, solo si cotización y estados financieros están en la misma divisa
         if y.get("price", {}).get("currency") == y.get("financialData", {}).get("financialCurrency"):
             self.fuente_ev[t] = "quoteSummary"
             return r(y.get("defaultKeyStatistics", {}).get("enterpriseToEbitda"))
@@ -289,7 +296,7 @@ def main():
     avisos, fallos = [], []
     if a.snapshot:
         yq = json.load(open(BASE / "snapshot" / f"yahoo_{a.snapshot}.json", encoding="utf-8"))
-        estad = json.load(open(next((BASE / "snapshot").glob("yahoo_estadisticas_*.json")), encoding="utf-8"))
+        estad = RESPALDO
         V = dt.date(2026, 10, 9); tnx = 5.24; eurusd = CONF["eurusd_inicial"]; hoy = a.snapshot; series = None
     else:
         yq, fallos, get = descargar(tickers + ["^TNX", "EURUSD=X"])
@@ -350,10 +357,10 @@ def main():
             mult.append(mprev[t]); avisos.append(f"{t}: se mantienen los múltiplos anteriores ({ex}).")
 
     usados = {cp["tk"] for t in orden for cp in CONF["empresas"][t]["comparables"]}
-    alternativos = sorted(t for t in usados if t in F and not str(cons.fuente_ev.get(t, "")).startswith(("statistics", "pagina")))
+    alternativos = sorted(t for t in usados if t in F and cons.fuente_ev.get(t) in ("quoteSummary", "sin_dato"))
     if alternativos:
-        avisos.append("EV/EBITDA sin el dato de la página Statistics de Yahoo para " + ", ".join(alternativos)
-                      + ": se usa una fuente alternativa o se excluye ese comparable.")
+        avisos.append("EV/EBITDA de " + ", ".join(alternativos) + " sin el dato de la página Statistics de Yahoo"
+                      + " ni de la última valoración completa: se usa una fuente alternativa o se excluye ese comparable.")
     estado["avisos"] = avisos
 
     # detalle para revisar la semana (qué comparables entran en cada mediana y de dónde sale su EV/EBITDA)
