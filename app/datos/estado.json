@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-11T08:38+00:00",
+ "actualizado": "2026-10-11T08:40+00:00",
  "fecha_mercado": "2026-10-09",
  "valoracion_completa": "2026-10-10",
  "empresas": {
@@ -39,8 +39,6 @@
    "proximos_resultados": "2026-10-21"
   }
  },
- "avisos": [
-  "EV/EBITDA sin el dato de la página Statistics de Yahoo para SAP: se usa una fuente alternativa o se excluye ese comparable."
- ],
+ "avisos": [],
  "fallos": []
 }
