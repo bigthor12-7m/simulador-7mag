@@ -1,44 +1,47 @@
 {
- "actualizado": "2026-10-19T05:39+00:00",
- "fecha_mercado": "2026-10-16",
+ "actualizado": "2026-10-26T05:42+00:00",
+ "fecha_mercado": "2026-10-23",
  "valoracion_completa": "2026-10-10",
  "empresas": {
   "AAPL": {
-   "cotizacion": 343.46,
+   "cotizacion": 347.725,
    "consenso": "actualizado",
    "proximos_resultados": "2026-11-02"
   },
   "MSFT": {
-   "cotizacion": 529.05,
+   "cotizacion": 524.51,
    "consenso": "actualizado",
    "proximos_resultados": "2026-10-28"
   },
   "NVDA": {
-   "cotizacion": 214.13,
+   "cotizacion": 210.96,
    "consenso": "actualizado",
    "proximos_resultados": "2026-11-17"
   },
   "GOOGL": {
-   "cotizacion": 340.59,
+   "cotizacion": 320.21,
    "consenso": "actualizado",
    "proximos_resultados": "2026-10-28"
   },
   "AMZN": {
-   "cotizacion": 250.0,
+   "cotizacion": 248.0,
    "consenso": "actualizado",
    "proximos_resultados": "2026-10-29"
   },
   "META": {
-   "cotizacion": 709.325,
-   "consenso": "actualizado",
+   "cotizacion": 642.62,
+   "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2026-10-21"
   },
   "TSLA": {
-   "cotizacion": 354.72,
-   "consenso": "actualizado",
+   "cotizacion": 372.22,
+   "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2026-10-21"
   }
  },
- "avisos": [],
+ "avisos": [
+  "Meta ha publicado resultados nuevos: sus años 1-2 siguen con el consenso de la última valoración completa hasta que se rehaga.",
+  "Tesla ha publicado resultados nuevos: sus años 1-2 siguen con el consenso de la última valoración completa hasta que se rehaga."
+ ],
  "fallos": []
 }
