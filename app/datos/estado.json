@@ -1,45 +1,48 @@
 {
- "actualizado": "2026-10-26T05:42+00:00",
- "fecha_mercado": "2026-10-23",
+ "actualizado": "2026-11-02T06:07+00:00",
+ "fecha_mercado": "2026-10-30",
  "valoracion_completa": "2026-10-10",
  "empresas": {
   "AAPL": {
-   "cotizacion": 347.725,
+   "cotizacion": 344.63,
    "consenso": "actualizado",
    "proximos_resultados": "2026-11-02"
   },
   "MSFT": {
-   "cotizacion": 524.51,
-   "consenso": "actualizado",
-   "proximos_resultados": "2026-10-28"
+   "cotizacion": 521.91,
+   "consenso": "pendiente_valoracion_completa",
+   "proximos_resultados": "2027-01-27"
   },
   "NVDA": {
-   "cotizacion": 210.96,
+   "cotizacion": 204.64,
    "consenso": "actualizado",
    "proximos_resultados": "2026-11-17"
   },
   "GOOGL": {
-   "cotizacion": 320.21,
-   "consenso": "actualizado",
+   "cotizacion": 279.84,
+   "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2026-10-28"
   },
   "AMZN": {
-   "cotizacion": 248.0,
-   "consenso": "actualizado",
+   "cotizacion": 240.35,
+   "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2026-10-29"
   },
   "META": {
-   "cotizacion": 642.62,
+   "cotizacion": 614.99,
    "consenso": "pendiente_valoracion_completa",
-   "proximos_resultados": "2026-10-21"
+   "proximos_resultados": "2027-01-27"
   },
   "TSLA": {
-   "cotizacion": 372.22,
+   "cotizacion": 399.81,
    "consenso": "pendiente_valoracion_completa",
-   "proximos_resultados": "2026-10-21"
+   "proximos_resultados": "2027-01-27"
   }
  },
  "avisos": [
+  "Microsoft ha publicado resultados nuevos: sus años 1-2 siguen con el consenso de la última valoración completa hasta que se rehaga.",
+  "Alphabet ha publicado resultados nuevos: sus años 1-2 siguen con el consenso de la última valoración completa hasta que se rehaga.",
+  "Amazon ha publicado resultados nuevos: sus años 1-2 siguen con el consenso de la última valoración completa hasta que se rehaga.",
   "Meta ha publicado resultados nuevos: sus años 1-2 siguen con el consenso de la última valoración completa hasta que se rehaga.",
   "Tesla ha publicado resultados nuevos: sus años 1-2 siguen con el consenso de la última valoración completa hasta que se rehaga."
  ],
