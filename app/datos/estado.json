@@ -1,45 +1,46 @@
 {
- "actualizado": "2026-11-02T06:07+00:00",
- "fecha_mercado": "2026-10-30",
+ "actualizado": "2026-11-09T06:14+00:00",
+ "fecha_mercado": "2026-11-06",
  "valoracion_completa": "2026-10-10",
  "empresas": {
   "AAPL": {
-   "cotizacion": 344.63,
-   "consenso": "actualizado",
-   "proximos_resultados": "2026-11-02"
+   "cotizacion": 342.37,
+   "consenso": "pendiente_valoracion_completa",
+   "proximos_resultados": "2027-01-28"
   },
   "MSFT": {
-   "cotizacion": 521.91,
+   "cotizacion": 530.61,
    "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2027-01-27"
   },
   "NVDA": {
-   "cotizacion": 204.64,
+   "cotizacion": 186.64,
    "consenso": "actualizado",
    "proximos_resultados": "2026-11-17"
   },
   "GOOGL": {
-   "cotizacion": 279.84,
+   "cotizacion": 284.78,
    "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2026-10-28"
   },
   "AMZN": {
-   "cotizacion": 240.35,
+   "cotizacion": 259.3,
    "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2026-10-29"
   },
   "META": {
-   "cotizacion": 614.99,
+   "cotizacion": 610.15,
    "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2027-01-27"
   },
   "TSLA": {
-   "cotizacion": 399.81,
+   "cotizacion": 358.22,
    "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2027-01-27"
   }
  },
  "avisos": [
+  "Apple ha publicado resultados nuevos: sus años 1-2 siguen con el consenso de la última valoración completa hasta que se rehaga.",
   "Microsoft ha publicado resultados nuevos: sus años 1-2 siguen con el consenso de la última valoración completa hasta que se rehaga.",
   "Alphabet ha publicado resultados nuevos: sus años 1-2 siguen con el consenso de la última valoración completa hasta que se rehaga.",
   "Amazon ha publicado resultados nuevos: sus años 1-2 siguen con el consenso de la última valoración completa hasta que se rehaga.",
