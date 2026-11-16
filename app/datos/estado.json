@@ -1,40 +1,40 @@
 {
- "actualizado": "2026-11-09T06:14+00:00",
- "fecha_mercado": "2026-11-06",
+ "actualizado": "2026-11-16T06:22+00:00",
+ "fecha_mercado": "2026-11-13",
  "valoracion_completa": "2026-10-10",
  "empresas": {
   "AAPL": {
-   "cotizacion": 342.37,
+   "cotizacion": 356.27,
    "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2027-01-28"
   },
   "MSFT": {
-   "cotizacion": 530.61,
+   "cotizacion": 523.88,
    "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2027-01-27"
   },
   "NVDA": {
-   "cotizacion": 186.64,
+   "cotizacion": 162.85,
    "consenso": "actualizado",
    "proximos_resultados": "2026-11-17"
   },
   "GOOGL": {
-   "cotizacion": 284.78,
+   "cotizacion": 295.77,
    "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2026-10-28"
   },
   "AMZN": {
-   "cotizacion": 259.3,
+   "cotizacion": 266.66,
    "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2026-10-29"
   },
   "META": {
-   "cotizacion": 610.15,
+   "cotizacion": 641.69,
    "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2027-01-27"
   },
   "TSLA": {
-   "cotizacion": 358.22,
+   "cotizacion": 390.22,
    "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2027-01-27"
   }
