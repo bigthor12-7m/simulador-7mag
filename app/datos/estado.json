@@ -1,40 +1,40 @@
 {
- "actualizado": "2026-11-16T06:22+00:00",
- "fecha_mercado": "2026-11-13",
+ "actualizado": "2026-11-23T15:56+00:00",
+ "fecha_mercado": "2026-11-23",
  "valoracion_completa": "2026-10-10",
  "empresas": {
   "AAPL": {
-   "cotizacion": 356.27,
+   "cotizacion": 349.79,
    "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2027-01-28"
   },
   "MSFT": {
-   "cotizacion": 523.88,
+   "cotizacion": 499.5,
    "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2027-01-27"
   },
   "NVDA": {
-   "cotizacion": 162.85,
-   "consenso": "actualizado",
+   "cotizacion": 168.42,
+   "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2026-11-17"
   },
   "GOOGL": {
-   "cotizacion": 295.77,
+   "cotizacion": 282.675,
    "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2026-10-28"
   },
   "AMZN": {
-   "cotizacion": 266.66,
+   "cotizacion": 257.35,
    "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2026-10-29"
   },
   "META": {
-   "cotizacion": 641.69,
+   "cotizacion": 592.91,
    "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2027-01-27"
   },
   "TSLA": {
-   "cotizacion": 390.22,
+   "cotizacion": 390.145,
    "consenso": "pendiente_valoracion_completa",
    "proximos_resultados": "2027-01-27"
   }
@@ -42,6 +42,7 @@
  "avisos": [
   "Apple ha publicado resultados nuevos: sus años 1-2 siguen con el consenso de la última valoración completa hasta que se rehaga.",
   "Microsoft ha publicado resultados nuevos: sus años 1-2 siguen con el consenso de la última valoración completa hasta que se rehaga.",
+  "NVIDIA ha publicado resultados nuevos: sus años 1-2 siguen con el consenso de la última valoración completa hasta que se rehaga.",
   "Alphabet ha publicado resultados nuevos: sus años 1-2 siguen con el consenso de la última valoración completa hasta que se rehaga.",
   "Amazon ha publicado resultados nuevos: sus años 1-2 siguen con el consenso de la última valoración completa hasta que se rehaga.",
   "Meta ha publicado resultados nuevos: sus años 1-2 siguen con el consenso de la última valoración completa hasta que se rehaga.",
